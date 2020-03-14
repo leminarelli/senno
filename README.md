@@ -1,4 +1,4 @@
-# senno-teste
+# senno
 
 O projeto utiliza a versão v10.15.3 do NodeJS.​
  
