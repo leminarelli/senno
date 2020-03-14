@@ -1,0 +1,51 @@
+/*
+** CONNECTION
+*/
+#connection:before {
+    content: "Conexão Estabelecida"
+}
+#connection {
+    width: 100vw;
+    height: 0vh;
+    background-color: #36f446;
+    font-size: 1em;
+    color: white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    position: fixed;
+    top: -10px;
+    z-index: 1000;
+}
+#connection.offline:before {
+    content: "Conexão Perdida"
+}
+#connection.offline {
+    top: 0px;
+    background-color: #f44336;
+    height: 3vh;
+    transition: all 0.5s ease-out;
+    padding: 10px 0px;
+}
+#connection.reconnected:before {
+    content: "Conexão restabelecida. Recomendamos que atualize a página."
+}
+#connection.reconnected {
+    top: 0px;
+    background-color: $color-purple;
+    height: 3vh;
+    transition: all 0.5s ease-out;
+    padding: 10px 0px;
+}
+#connection.update:before {
+    content: "Nova versão disponível. Atualize a página para obter as últimas atualizações."
+}
+#connection.update {
+    top: 0px;
+    background-color: var(--main-color);
+    height: 3vh;
+    transition: all 0.5s ease-out;
+    padding: 10px 0px;
+}

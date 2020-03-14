@@ -1,0 +1,58 @@
+
+/*
+** TEMPLATE COLETA DE IDEIAS
+*/
+
+.template-coleta-ideias {
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    /* margin-bottom: 2em; */
+}
+.template-coleta-ideias:before {
+    content: " ";
+    padding: 0.75em;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
+.template-coleta-ideias:after {
+    content: url('/images/value_proposition_canvas_200px.svg');
+    display: block;
+    margin-left: calc(50%);
+    transform: translateX(-100px);
+}
+.template-coleta-ideias-content {
+    display: inline-block;
+    padding-right: 0.75em;
+    padding-bottom: 0.75em;
+    /* padding-left: 0.75em; */
+    width: calc(100% - 0.75em);
+}
+
+@media (min-width: 768px) {
+    .template-coleta-ideias:after {
+        content: url('/images/value_proposition_canvas_200px.svg');
+        display: block;
+        right: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0px;
+    }
+    .template-coleta-ideias-content {
+        width: calc(100% - 200px - 0.75em);
+    }
+}
+
+.template-design-thinking::after {
+    content: url('/images/template_design_thinking_200px.svg');
+}
+
+.template-evidence-planning::after {
+    content: url('/images/template_evidence_planning_200px.svg');
+}
+
+.template-change-management::after {
+    content: url('/images/template_change_management_200px.svg');
+}

@@ -1,0 +1,39 @@
+/*
+** SWITCH ICON
+*/
+.switch-icon label {
+    cursor: pointer;
+    padding-left: 0px;
+}
+
+.switch label input:checked + i {
+    color: var(--main-color);
+}
+
+/*
+** SWITCH
+*/
+
+.switch-inline {
+    display: inline;
+    position: relative;
+    bottom: 10px;
+}
+
+.switch label input[indeterminate=true]+.bmd-switch-track:after {
+    left: calc(80% - 1.25rem);
+    background-color: #ffffff;
+}
+
+.switch label input:checked[value=false]+.bmd-switch-track {
+    background-position: 0%;
+}
+
+.switch label input:checked[value=false]+.bmd-switch-track:after {
+    left: calc(60% - 1.25rem);
+    background-color: #949494;
+}
+
+.switch label input:checked[value=undefined]+.bmd-switch-track {
+    background-position: 0%;
+}

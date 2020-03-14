@@ -1,0 +1,74 @@
+/*
+** TIP BOX - EDIT PAGES
+*/
+.tip-box {
+    border-radius: 5px;
+    background: var(--navbar-background-color);
+    color: white;
+    min-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 11px;
+    cursor: pointer;
+    z-index: 10;
+    /* max-height: 50px; */
+
+    &.notice {
+        margin: 0;
+        max-height: 36px;
+        // position: absolute;
+        right: 0px;
+        width: 36px;
+
+        i{
+            font-size: 12px !important;
+        }
+    }
+
+    &.open {
+        position: absolute;
+        max-height: none;
+        min-width: 250px;
+        max-width: 380px;
+    }
+}
+
+.tip-box .header {
+    /* padding: 0 10px; */
+    /* font-size: 14px; */
+    position: relative;
+    width: auto;
+}
+
+
+/* Arrow */
+.tip-box:before {
+    /*
+    position: absolute;
+    left: 5px;
+    top: 25px;
+    content: "\00a0";
+    width: 10px;
+    height: 15px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid var(--navbar-background-color);
+    */
+}
+
+.tip-box.pink-explosion:before {
+    border-right: 12px solid  rgb(255, 0, 200) !important;
+}
+
+.tip-box .body {
+    /* padding: 10px; */
+    display: none;
+    /* font-weight: 200; */
+    border-top: 1px solid white;
+    margin-top: 5px;
+    padding-top: 10px;
+
+    &.open {
+        display: block;
+    }
+}

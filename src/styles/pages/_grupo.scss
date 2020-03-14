@@ -1,0 +1,85 @@
+/*
+** GRUPO
+*/
+
+.info-value {
+    margin-left: 6px;
+}
+
+.grupo-info-agentes, .grupo-info-moderadores, .grupo-info-plataformas {
+    // border: 1px solid white;
+    // border-radius: 12px;
+    // padding: 5px;
+    max-width: 16em;
+    display: inline;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+
+/*
+** GRUPO PAGE
+*/
+
+.grupo-page {
+    // max-width: 80%;
+    margin: auto;
+    padding-top: 20px !important;
+
+    .panel-title a {
+        i {
+            transition: transform 0.277s 0s ease-in-out;
+            transform: scale(0.8) rotate(90deg);
+            top: 2px;
+            position: relative;    
+        }
+
+        &.collapsed i{
+            transform: scale(0.8);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .grupo-page {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+.grupo-summary {
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.grupo-resumo {
+    margin: 2em 0;
+}
+
+.grupo-title-resumo {
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.grupo-tags {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.grupo-actions {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.grupo-action {
+    display: inline-block;
+    width: 200px;
+}

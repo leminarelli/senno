@@ -1,0 +1,32 @@
+/*
+** REDACTOR
+*/
+
+.redactor_box p {
+    min-height: 1em;
+}
+
+.redactor_editor, .redactor_editor:focus {
+    padding: 15px 15px 0px !important;
+}
+
+.redactor_editor:empty {
+    padding: 15px 15px 38px !important;
+}
+
+.jodit_container:not(.jodit_inline) {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.jodit_container .jodit_toolbar,
+.jodit_container .jodit_statusbar {
+    background-color: rgba(255,255,255,1);
+}
+
+.jodit_container:not(.jodit_inline) .jodit_wysiwyg {
+    background-color: rgba(0,0,0,0);
+}
+
+.jodit_container:not(.jodit_inline) .jodit_workplace {
+    background-color: rgba(0,0,0,0);
+}

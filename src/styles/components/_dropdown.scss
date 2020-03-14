@@ -1,0 +1,28 @@
+/*
+** DROPDOWN
+*/
+
+.dropdown {
+    position: static;
+}
+
+.scrollable-dropdown {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.dropdown .dropdown-menu .dropdown-item.input-group {
+    max-width: 100%;
+}
+
+.dropdown .selected-object {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.dropdown-item {
+    &:focus, &:hover {
+        background: #EFF0F1
+    }
+}

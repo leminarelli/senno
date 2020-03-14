@@ -1,0 +1,98 @@
+<!-- Sidebar  -->
+<nav id="sidebar" class="active">
+<!-- 
+<div class="sidebar-header">
+    <h3>Bootstrap Sidebar</h3>
+    <strong>BS</strong>
+</div>
+-->
+    <ul class="list-unstyled components">
+        <li class="<%= (req._parsedOriginalUrl.path === '/' ? 'active': '') %>">
+            <a href="/" tabindex="1">
+                <%- h.icon("fa-home") %>
+                <span>&nbsp;</span>
+            </a>
+        </li>
+    </ul>   
+
+    <div class="divisor"></div>
+
+    <ul class="nav__features components">
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/plataformas') ? 'active': '') %>">
+            <a href="/plataformas" tabindex="1">
+                <%- h.icon("plataforma") %>
+                <span>&nbsp; <span class="nav__features_counter">10</span></span>
+            </a>
+            
+        </li>
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/ideias') ? 'active': '') %>">
+            <a href="/ideias" tabindex="1">
+                <%- h.icon("ideia") %>
+                <span>&nbsp; <span class="nav__features_counter">15</span></span>
+            </a>
+            
+        </li>
+        <% if(!global.is_prod) { %>
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/inovacoes') ? 'active': '') %>">
+            <a href="/inovacoes" tabindex="1">
+                <%- h.icon("fa-cubes") %>
+                <span>&nbsp; <span class="nav__features_counter">16</span></span>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+
+    <div class="divisor"></div>
+
+    <ul class="list-unstyled components">
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/grupos') ? 'active': '') %>">
+            <a href="/grupos" tabindex="1">
+                <%- h.icon("grupo") %>
+                <span>&nbsp; <span class="nav__features_counter">7</span></span>
+            </a>
+        </li>
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/rascunhos') ? 'active': '') %>">
+            <a href="/rascunhos" tabindex="1">
+                <%- h.icon("fa-pencil-alt") %>
+                <span>&nbsp; <span class="nav__features_counter">3</span></span>
+            </a>
+        </li>
+        <% if(!global.is_prod) { %>
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/reports') ? 'active': '') %>">
+            <a href="/reports" tabindex="1">
+                <%- h.icon("fa-chart-bar") %>
+                <span>&nbsp;</span>
+            </a>
+        </li>
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/boards') ? 'active': '') %>">
+            <a href="/boards" tabindex="1">
+                <%- h.icon("fa-thumbtack") %>
+                <span>&nbsp;</span>
+            </a>
+        </li>
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/historico') ? 'active': '') %>">
+            <a href="/historico" tabindex="1">
+                <%- h.icon("fa-history") %>
+                <span>&nbsp;</span>
+            </a>
+        </li>
+        <li class="<%= (req._parsedOriginalUrl.path.startsWith('/ajuda') ? 'active': '') %>">
+            <a href="#ajudaSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" tabindex="1">
+                <%- h.icon("fa-question") %>
+                <span>&nbsp;</span>
+            </a>
+            <ul class="collapse list-unstyled" id="ajudaSubmenu">
+                <li>
+                <a href="/ajuda" tabindex="1">&nbsp;</a>
+                </li>
+                <li>
+                <a href="/ajuda" tabindex="1">&nbsp;</a>
+                </li>
+                <li>
+                <a href="/ajuda" tabindex="1">&nbsp;</a>
+                </li>
+            </ul>
+        </li>
+        <% } %>
+    </ul>
+</nav>

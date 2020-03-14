@@ -1,0 +1,32 @@
+
+/*
+** SYSOP
+*/
+
+.sysop-container {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+
+/*
+** TABS
+*/
+
+*[role=tab] {
+    cursor: pointer;
+}
+
+
+/*
+** FILE ICON
+*/
+
+.file-icon::before {
+    border-color: var(--body-background-color) var(--body-background-color) rgba(255,255,255,.35) rgba(255,255,255,.35);
+}
+
+

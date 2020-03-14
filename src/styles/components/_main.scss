@@ -1,0 +1,35 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+    &__sidebar {
+        // position: relative;
+        position: fixed;
+        overflow-x: hidden;
+        background: var(--sidebar-background-color);
+        color: var(--sidebar-icon-color);    
+        z-index: 100;
+        text-align: left;
+        overflow: hidden;
+        width: var(--width-sidebar);
+        transition: all 0.3s 0s ease-in-out;
+
+        // #sidebar {
+        //     transition: all 1s 0s ease-in-out;
+        // }
+
+        &.retract {
+            // transform: translateX(-100%);            
+            margin-left: -250px;
+            // #sidebar {
+            //     transform: translateX(-100%);            
+            // }
+        }
+    }
+
+    &__content {
+        flex: 1;
+        padding-top: 53px;
+    }
+}

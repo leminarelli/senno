@@ -1,0 +1,30 @@
+.sugestoes {
+
+    h2 {
+        margin: 20px 0;
+        font-weight: 900;
+    }
+
+    .destaques-home {
+        .img-destaque {
+            height: 150px;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            color: #757a80;
+            line-height: inherit;
+        }
+    }
+
+    p.acessos {
+        color: #343434;
+    }
+
+}

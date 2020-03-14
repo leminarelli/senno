@@ -1,0 +1,407 @@
+/*
+** POPOVER CARD
+*/
+
+.popover-card {
+    top: 0;
+    left: 0;
+    max-width: 225;
+    min-width: 225;
+    min-height: 300px;
+    max-height: 300px;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    font-size: .875rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    border-radius: .3rem;
+    /* box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.2); */
+    color: #444;
+    position: relative;
+
+    .senno-popover-header {
+        max-height: 1000px;
+        padding: .75rem;
+        padding-bottom: 13px;
+        border-bottom: 0px !important;
+
+        .close.remove-minicard {
+            position: relative;
+            padding-top: 1px;
+            padding-right: 4px;
+            z-index: 10;
+        }
+    }
+    
+}
+
+
+
+
+
+/*
+** POPOVERS
+*/
+
+.popover {
+    max-width: unset;
+    background-color: #fff;
+    border-color: transparent;
+    // box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.03);
+    box-shadow: 0px 0 0.2rem rgba(0, 0, 0, 0.05);
+}
+
+.senno-popover, .popover-author {
+    max-width: var(--senno-popover-max-width);
+    min-width: var(--senno-popover-max-width);
+    max-height: var(--senno-popover-max-height);
+    min-height: var(--senno-popover-max-height);
+}
+
+.popover-card.popover-author.active {
+    border-width: 2px;
+}
+
+.senno-popover-header {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: inherit;
+    background-color: transparent;
+    /* border-bottom: 1px solid #ebebeb; */
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+    max-height: 150px;
+
+    
+}
+
+.senno-popover-notificacoes-header {
+    background-color: var(--navbar-background-color);
+    text-align: center;
+    color: white;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-size: 0.9rem;
+
+    &::before {
+        border-bottom-color: var(--navbar-background-color) !important;
+    }
+
+    span.total-notifications {
+        display: inline-block;
+        border-radius: 10px;
+        padding: 3px 10px;
+        background: var(--sidebar-background-color);
+        color: #FFF;
+        font-size: 0.8rem;
+        margin-left: 5px;    
+    }
+}
+
+
+.senno-popover-notificacoes-arrow::after {
+    border-bottom-color: var(--navbar-background-color) !important;
+}
+
+.senno-popover-investimentos-arrow::after {
+    border-bottom-color: $color-blue !important;
+}
+
+.senno-popover-busca-arrow::after {
+    border-bottom-color: var(--waiting-color) !important;
+}
+
+.senno-popover-busca-arrow::before {
+    border-bottom-color: rgba(0,0,0,.1) !important;
+}
+
+.senno-popover-investimentos-header {
+    background-color: var(--waiting-color) ;
+    max-height: 100%;
+
+    &:before {
+        display: none !important; 
+    }
+
+
+    .investimentos-header-title {
+        font-size: 14px
+    }
+
+    .resumo__list {
+        &-item {
+            display: flex;
+            margin-top: 10px;
+            span {
+                font-size: 12px;
+
+                &.valor {
+                    margin-left: 10px;
+                    margin-right: 15px;
+                    font-size: 14px;
+                }
+            }
+
+            .up {
+                color: $color-green;
+                border-color: $color-green;
+            }
+
+            .down {
+                color: $color-red;
+                border-color: $color-red;
+            }
+        }
+    }
+}
+
+.thumb-investidores {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 7px 14px;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.senno-popover-body {
+    background-color: transparent;
+    // padding: .5rem .75rem;
+    color: #212529;
+    border-radius: .3rem;
+    min-height: 50px;
+
+    &.avaliacao__minicard {
+        min-height: auto;
+
+        .avaliacao__minicard_label {
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+        
+        [class *= "icon-"] {
+            font-size: 12px;
+            // border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 20px;
+            vertical-align: middle;
+            background: rgba(black,0.1);
+
+            &:before {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+            }
+        }
+
+        .icon-dollar {
+            font-size: 10px;
+        }
+
+        ._alto, ._alta {
+            i {
+                color: $color-red;
+                background: rgba($color-red,0.255);
+            }
+        }
+
+        ._medio, ._media {
+            i {
+                color: $color-yellow;
+                background: rgba($color-yellow,0.255);
+            }
+        }
+
+        ._baixo, ._baixa {
+            i {
+                color: $color-green;
+                background: rgba($color-green,0.255);
+            }
+        }
+
+        .pendente {
+            i {
+                color: $color-gray;
+                background: rgba($color-gray,0.255);
+            }
+        }
+
+        ._pesquisa {
+            i {
+                color: #ea8419;
+                background: rgba(#f6b26b,0.255);
+            }
+        }
+        ._breakthrough {
+            i {
+                color: #6fa8dc;
+                background: rgba(#6fa8dc,0.255);
+            }
+        }
+        ._radical {
+            i {
+                color: #93c47d;
+                background: rgba(#93c47d,0.255);
+            }
+        }
+        ._incremental {
+            i {
+                color: #e06666;
+                background: rgba(#e06666,0.255);
+            }
+        }
+    }
+}
+
+.senno-popover-notifications-body {
+
+    .list-group {
+        padding: 0;
+        // background: #273B48;
+
+        .list-group-item {
+            // color: rgb(183, 192, 205);
+            // border-bottom: 1px solid rgba(183, 192, 205, 0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding: 1.5rem 1.7rem;
+            max-width: 400px;
+            
+
+            img {
+                margin-right: 5px !important;
+            }
+            
+
+            &.list-group-item-action.menu-notification-item {                
+                opacity: 0.8;
+                background: white;
+                
+                &.unread {
+                    opacity: 1;
+                    background: #EDF5FA;                    
+                }
+
+
+                &:focus, &:hover {
+                    // background: rgba(255,255,255,0.03);
+                    color: black;
+                    
+                }
+                
+            }
+        }
+
+        
+    }
+    
+    
+}
+
+.senno-popover-header .menu-user-info {
+    font-size: 0.75em;
+}
+
+
+.senno-popover-body-novo {
+    .btn {
+        width: 100%;
+        border-radius: 0;
+        text-align: left;
+        text-transform: none;
+        padding: 10px 20px;
+        margin: 0
+    }
+}
+
+.senno-popover-medalha-body {
+    border: 2px solid;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0 auto !important;
+    padding: 10px 5px;
+
+    &._facil {
+        border-color: $color-green;
+
+        [class*='icon-'], .text-uppercase {
+            color: $color-green;
+        }
+    }
+
+    &._medio {
+        border-color: $color-yellow;
+
+        [class*='icon-'], .text-uppercase {
+            color: $color-yellow;
+        }
+    }
+
+    &._dificil {
+        border-color: $color-red;
+
+        [class*='icon-'], .text-uppercase {
+            color: $color-red;
+        }
+    }
+}
+
+.senno-popover-footer {
+    background: $color-gray;
+    color: white;
+    padding: .5rem .75rem;
+    width: 100%;
+    display: block;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.minicard__remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(55, 55, 55, 0.3);
+    color: white;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+
+.popover-user {
+    .minicard__remove {
+        background: rgba(255,255,255,0.3);
+    }
+}
+
+.popover-new {
+    a:focus {
+        color:red;
+    }
+}
+
+.popover-inner {
+    color: $color-black;
+}

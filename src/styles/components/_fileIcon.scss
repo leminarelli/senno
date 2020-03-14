@@ -1,0 +1,9 @@
+.file-icon {
+    min-width: 25px;
+}
+
+.file-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

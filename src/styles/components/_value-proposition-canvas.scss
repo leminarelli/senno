@@ -1,0 +1,129 @@
+
+/*
+** VALUE PROPOSITION CANVAS
+*/
+
+.value-proposition {
+    border-left: 20px solid #888;
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 2em;
+    border-radius: 6px;
+    box-shadow: none;
+}
+.value-proposition:before {
+    content: " ";
+    padding: 0.75em;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.value-proposition:after {
+    content: url('/images/value_proposition_canvas_200px.svg');
+    display: block;
+    margin-left: calc(50%);
+    transform: translateX(-100px);
+}
+
+.value-proposition-content {
+    display: inline-block;
+    padding-right: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 0.75em;
+    width: calc(100% - 0.75em);
+}
+
+@media (min-width: 1010px) {
+    .value-proposition:after {
+        content: url('/images/value_proposition_canvas_200px.svg');
+        display: block;
+        right: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0px;
+    }
+    .value-proposition-content {
+        width: calc(100% - 200px - 0.75em);
+    }
+}
+
+.value-proposition-customer-jobs {
+    border-left: 20px solid #e84242;
+    border-bottom: 1px solid #e84242;
+    border-top: 1px solid #e84242;
+    border-right: 1px solid #e84242;
+}
+.value-proposition-customer-jobs:before {
+    content: "Customer Jobs";
+}
+.value-proposition-customer-jobs::after {
+    content: url('/images/value_proposition_canvas_200px_customer_jobs.svg');
+}
+
+.value-proposition-pains {
+    border-left: 20px solid #e7a243;
+    border-bottom: 1px solid #e7a243;
+    border-top: 1px solid #e7a243;
+    border-right: 1px solid #e7a243;
+}
+.value-proposition-pains:before {
+    content: "Pains";
+}
+.value-proposition-pains:after {
+    content: url('/images/value_proposition_canvas_200px_pains.svg');
+}
+
+.value-proposition-gains {
+    border-left: 20px solid #e8d942;
+    border-bottom: 1px solid #e8d942;
+    border-top: 1px solid #e8d942;
+    border-right: 1px solid #e8d942;
+}
+.value-proposition-gains:before {
+    content: "Gains";
+}
+.value-proposition-gains:after {
+    content: url('/images/value_proposition_canvas_200px_gains.svg');
+}
+
+.value-proposition-products-and-services {
+    border-left: 20px solid #27ba2b;
+    border-bottom: 1px solid #27ba2b;
+    border-top: 1px solid #27ba2b;
+    border-right: 1px solid #27ba2b;
+}
+.value-proposition-products-and-services::before {
+    content: "Products & Services";
+}
+.value-proposition-products-and-services::after {
+    content: url('/images/value_proposition_canvas_200px_products_and_services.svg');
+}
+
+.value-proposition-pains-relievers {
+    border-left: 20px solid #4542e8;
+    border-bottom: 1px solid #4542e8;
+    border-top: 1px solid #4542e8;
+    border-right: 1px solid #4542e8;
+}
+.value-proposition-pains-relievers::before {
+    content: "Pains Relievers";
+}
+.value-proposition-pains-relievers::after {
+    content: url('/images/value_proposition_canvas_200px_pains_relievers.svg');
+}
+
+.value-proposition-gains-creators {
+    border-left: 20px solid #4B0082;
+    border-bottom: 1px solid #4B0082;
+    border-top: 1px solid #4B0082;
+    border-right: 1px solid #4B0082;
+}
+.value-proposition-gains-creators::before {
+    content: "Gains Creators";
+}
+.value-proposition-gains-creators::after {
+    content: url('/images/value_proposition_canvas_200px_gains_creators.svg');
+}

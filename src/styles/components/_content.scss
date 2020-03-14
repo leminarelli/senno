@@ -1,0 +1,31 @@
+
+#content, .content {
+	max-width: 100%;
+    padding: 5px 65px;
+    min-height: 10vh;
+    transition: all 0.3s;
+    position: relative;
+
+    @media (max-width: $break-small) {
+        padding: 0px 50px;
+        padding-top: 30px;
+    }
+    @media (min-width: $break-small) and (max-width: $break-medium-) {
+        padding: 0px 0px;
+        padding-top: 30px;
+    }
+    @media (min-width: $break-medium) and (max-width: $break-large-) {
+        padding: 60px 85px;
+        padding-top: 30px;
+    }
+    @media (min-width: $break-large) {
+        padding: 60px 85px;
+        padding-top: 30px;
+    }
+}
+
+#content-full, .content-full {
+	max-width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}

@@ -1,0 +1,322 @@
+
+
+/*
+** BUTTONS
+*/
+
+.btn {
+    border-radius: 4px;
+    margin-bottom: 0px;
+
+    &:focus {
+        outline: auto 2px $color-outline;
+        outline-style: solid;
+    }
+}
+
+.btn-primary {
+    background-color: var(--navbar-background-color) !important;
+    color: white !important;
+}
+
+.btn-outline-dark {
+    border: 1px solid $color-black !important;
+
+    &:hover {
+        background: #000 !important;
+        color: white !important;
+    }
+}
+
+.btn-white-transparent {
+    background: rgba(255,255,255,0.25);
+    transition: all 0.2s ease-in-out;
+    color: white;
+
+    &:hover {
+        background: rgba(255,255,255,0.35);
+        color: rgba(255,255,255,0.7);
+    }
+}
+
+.btn-outline-blue {
+    border: 1px solid var(--navbar-background-color) !important;
+    color:  var(--navbar-background-color);
+
+    &:hover {
+        background: var(--navbar-background-color) !important;
+        color: white !important;
+    }
+}
+
+.btn.btn-outline-info {
+    border-color: currentColor;
+    color: var(--navbar-background-color) !important;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    margin-right: 1px;
+}
+.btn-outline-info:not(:disabled):not(.disabled).active:focus, .btn-outline-info:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(4,72,110,.5) !important;
+}
+.btn-outline-info.focus, .btn-outline-info:focus {
+    box-shadow: 0 0 0 0.2rem rgba(4,72,110,.5) !important;
+}
+.btn-outline-info:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: var(--navbar-background-color) !important;
+    border-color: var(--navbar-background-color) !important;
+}
+.btn-outline-info.active.custom-file-control:before, .btn-outline-info.custom-file-control:active:before, .btn-outline-info.custom-file-control:focus:before, .btn-outline-info.custom-file-control:hover:before, .btn-outline-info.focus.custom-file-control:before, .btn.btn-outline-info.active, .btn.btn-outline-info.focus, .btn.btn-outline-info:active, .btn.btn-outline-info:focus, .btn.btn-outline-info:hover, .open>.btn-outline-info.dropdown-toggle.custom-file-control:before, .open>.btn.btn-outline-info.dropdown-toggle {
+    color: var(--navbar-background-color) !important;
+    background-color: hsla(0,0%,60%,.2);
+    border-color: currentColor;
+}
+.btn-secondary {
+    background-color: #444444 !important;
+    color: white !important;
+}
+.btn-danger {
+    color: #fff !important;
+    background-color: #f44336 !important;
+    border-color: #f44336 !important;
+}
+
+.btn-navbar-action {
+    min-width: 130px;
+    font-size: 14px;
+    padding: 9px 12px;
+    text-transform: none;
+}
+
+.btn-fun {
+    background-color: rgb(255, 0, 200) !important;
+    color: white !important;
+}
+
+.btn.disabled {
+    cursor: auto;
+    pointer-events: none;
+}
+
+@media (min-width: 992px) {
+    .btn-navbar-action {
+        min-width: 130px;
+        max-width: 130px;
+        font-size: 14px;
+        padding: 9px 12px;
+        text-transform: none;
+    }
+}
+
+.btn-dropdown-navbar-action {
+    // max-width: 290px;
+    width:100%;
+}
+@media (min-width: 992px) {
+    .btn-dropdown-navbar-action {
+        // width:230px;
+    }
+}
+
+.word-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.word-ellipsis-nowrap {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.dropdown .btn {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.show .dropdown-toggle.btn-portfolio, .btn-portfolio {
+    background-color: var(--portfolio-background-color);
+    color: white !important;
+}
+
+.show .dropdown-toggle.btn-portfolio:hover, .btn-portfolio:hover {
+    background-color: var(--portfolio-background-color-hover);
+    color: white !important;
+}
+
+.show .dropdown-toggle.btn-plataforma, .btn-plataforma {
+    background-color: var(--plataforma-background-color);
+    color: white !important;
+}
+
+.show .dropdown-toggle.btn-plataforma:hover, .btn-plataforma:hover {
+    background-color: var(--plataforma-background-color-hover);
+    color: white !important;
+}
+
+.show .dropdown-toggle.btn-ideia, .btn-ideia {
+    background-color: var(--ideia-background-color);
+    color: white !important;
+}
+
+.show .dropdown-toggle.btn-ideia:hover, .btn-ideia:hover {
+    background-color: var(--ideia-background-color-hover);
+    color: white !important;
+}
+
+.show .dropdown-toggle.btn-gray, .btn-gray {
+    background-color: $color-gray;
+    color: white !important;
+
+    &:hover {
+        background-color: $color-gray;
+        color: white !important;
+    }
+}
+
+.btn-box {
+    border-radius: 0px !important;
+    color: white;
+}
+.btn-plataforma-arquivada {
+    background-color: gray;
+}
+.btn-plataforma-editar {
+    background-color: red;
+}
+.btn-plataforma-participando {
+    background-color: #62D26F;
+}
+.btn-plataforma-participar {
+    background-color: #04486E;
+}
+.btn-plataforma-pedido-pendente {
+    background-color: orange;
+}
+
+/* .btn-outline-info {
+    color: ;
+} */
+
+
+
+.btn__accordion {
+    display: flex;
+    flex-direction: row;
+    
+
+    &_item {
+        $this: &;
+        width: 90px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: $color-black !important;
+        font-size: 20px;
+        transition: all 0.3s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        cursor: pointer;
+
+        &.red {
+            background: $color-red;
+        }
+    
+        &.yellow {
+            background: $color-yellow;
+        }
+    
+        &.green {
+            background: $color-green;
+        }
+
+        &-txt {
+            font-size: 16px;
+        }
+
+        &-transition {
+            opacity: 0;
+            transform-origin: center;
+            max-height: 0;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.3s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+
+        &.expanded {
+            width: 172px;
+
+            #{$this}-transition {
+                max-height: 100px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.btn-holding, .custom-file-control::before {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: .46875rem 1rem;
+    line-height: 1.5;
+    border-radius: .125rem;
+}
+
+.btn-holding, .custom-file-control::before {
+    position: relative;
+    font-size: .875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    border: 0 #ccc;
+    outline: 0;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    will-change: box-shadow,transform;
+    color: rgba(0,0,0,.87);
+    background-color: transparent;
+}
+
+.btn-holding {
+    border-radius: 4px;
+}
+
+.btn-holding:not(:disabled):not(.disabled), .custom-file-control:not(:disabled):not(.disabled)::before, .navbar-toggler:not(:disabled):not(.disabled), .page-link:not(:disabled):not(.disabled), summary {
+    cursor: pointer;
+}
+
+.btn-holding.btn-outline-danger {
+    color: #f44336;
+    background-color: transparent;
+    border: 1px solid #f44336;
+}
+
+@-webkit-keyframes fill { 
+    to {
+        background-size: 100% 0; 
+    }
+} 
+
+@keyframes fill { 
+    to { 
+        background-size: 100% 0;
+    }
+}
+
+//The wrapper has the .cnh_holding class while the button is being pressed
+
+.cnh_holding button {
+    background: -webkit-linear-gradient( white , white) rgb(255,215,235) no-repeat 0 0;
+    background: linear-gradient( white , white) rgb(255,215,235) no-repeat 0 0;
+    mix-blend-mode: multiply;
+    background-size: 100% 100%;
+    -webkit-animation: fill 2s forwards;
+    animation: fill 2s forwards;
+}

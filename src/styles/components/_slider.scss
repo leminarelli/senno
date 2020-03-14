@@ -1,0 +1,107 @@
+/*
+** SLIDER
+*/
+
+.slider-modal-container {
+    padding: 0px 65px;
+}
+
+.slider-container {
+    width: 100%;
+    /* border: 5px black solid; */
+    overflow: hidden;
+    position: relative;
+}
+.slider-prev {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%) translateX(-110%);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+.slider-next {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%) translateX(110%);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+.slider {
+    /* margin: 0px 50px; */
+    /* line them up horizontally */
+    display: flex;
+    max-width: 72vw;
+    // flex-wrap: wrap;
+
+    /* dont allow for scrolling */
+    overflow-x: none;
+
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+
+      /* each slide snaps into place */
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    // justify-content: space-between;
+
+    &:after {
+        content: "";
+        flex: 0 1 calc(25% - 30px);
+    }
+
+
+
+    .item-select {
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0.5;
+
+        img, .medal-avatar {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        &.item-active {
+            opacity: 1;
+
+            img, .medal-avatar {
+                transform: scale(0.95);
+            }
+        }
+    }
+
+
+    
+      
+}
+.slider > div {
+    /* make sure the width is honored */
+    flex-shrink: 0;
+    width: var(--senno-popover-max-width);
+    white-space: normal;
+    margin-right: 20px !important;
+}
+
+.slider-next, .slider-prev {
+    &.disabled {
+        opacity: 0.3;
+        cursor: auto;
+    }
+}

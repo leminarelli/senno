@@ -1,0 +1,54 @@
+<head>
+    <%- include('template_head') %>
+    <title><%= (typeof title != "undefined" ? title + " | SENNO" : "") %></title>
+</head>
+<body class="page-login">
+    <style>
+        :root {
+            --background-color: #F4F7F6;
+            --floating-btn-color: #04486E;
+            --color-backLeft: #673AB7;
+            --color-backLeft-dark: #512DA8;
+            --color-senno: #04486E; /*hsl(202, 93%, 22%)*/
+            --color-senno-dark: #1c323e;
+        }
+    </style>
+
+    <div class="container-fluid">
+        <div class="col-md-6 block-content left-content">
+            <%- include('partial_register') %>
+        </div>
+        <div class="col-md-6 block-content right-content">
+            <div class="block-content right-content">
+                <div class="senno-form">
+                    <h6>Log in with your <strong>SENNO</strong> account</h6>
+                    <form id="form-login" method="post" action="/login">
+                        <div class="form-element form-stack">
+                            <label for="login_email" class="form-label">Email</label>
+                            <input id="login_email" class="" type="text" name="email" value="" required="required">
+                        </div>
+                        <div class="form-element form-stack">
+                            <label for="login_password" class="form-label">Password</label>
+                            <input id="login_password" class="" type="password" name="password" required>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <a class="link" href="/login/password_reset">Forgot your Password?</a>
+                            </div>
+                            <div class="form-element form-submit">
+                                <button id="logIn" class="btn btn-primary" type="submit" name="login">Log In</button>
+                            </div>
+                        </div>
+                    </form>
+                    <% if (message.length > 0) { %>
+                        <label><%= message %></label>
+                    <% } %>
+                    
+                </div>
+                <div class="footer text-center">
+                    <%- include('partial_copyright') %>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,821 @@
+/* line 2, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_box {
+  position: relative;
+  /* border: 1px solid #ddd; */
+  border: 1px dashed gray;
+  overflow: visible;
+  margin-top: 10px;
+}
+
+/* line 7, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_box, .redactor_box textarea {
+  background-color: transparent; }
+
+/* line 11, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+body .redactor_air {
+  position: absolute;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  z-index: 2; }
+
+/*
+	Fullscreen
+*/
+/* line 21, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+body .redactor_box_fullscreen {
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 2000; }
+
+/* line 30, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_box textarea {
+  font-family: robotoregular;
+  font-size: 13px;
+  overflow: auto;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  z-index: 1004;
+  outline: none;
+  border: none;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+/* line 59, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor, .redactor_editor:focus, .redactor_editor div, .redactor_editor p, .redactor_editor ul, .redactor_editor ol, .redactor_editor table, .redactor_editor dl, .redactor_editor blockquote, .redactor_editor pre, .redactor_editor h1, .redactor_editor h2, .redactor_editor h3, .redactor_editor h4, .redactor_editor h5 {
+  /* font-family: robotoregular !important; */
+}
+
+/* line 64, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor code, .redactor_editor pre {
+  /* font-family: robotoregular !important; */
+}
+
+/* line 77, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor, .redactor_editor:focus, .redactor_editor div:not([class^="link-preview"]), .redactor_editor p, .redactor_editor ul, .redactor_editor ol, .redactor_editor table, .redactor_editor dl, .redactor_editor blockquote, .redactor_editor pre {
+  font-size: 16px !important;
+  line-height: 1.45em !important; }
+
+/* line 82, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor, .redactor_editor:focus {
+  position: relative;
+  outline: none;
+  box-shadow: none !important;
+  padding: 15px 15px 30px 15px !important;
+  margin: 0 !important;
+  background: none;
+  /* background: #afafaf !important; */
+  overflow: auto;
+  white-space: normal; }
+
+/* line 94, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor.redactor_bg-white, .redactor_editor.redactor_bg-white:focus {
+  background: #fff !important; }
+
+/* line 98, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor a {
+  color: #15c !important;
+  text-decoration: underline !important; }
+
+/* line 106, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor object, .redactor_editor embed, .redactor_editor video, .redactor_editor img {
+  width: auto;
+  max-width: 100%; }
+
+/* line 111, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor video, .redactor_editor img {
+  height: auto; }
+
+/* line 122, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor div:not([class^="link-preview"]), .redactor_editor p, .redactor_editor ul, .redactor_editor ol, .redactor_editor table, .redactor_editor dl, .redactor_editor blockquote, .redactor_editor pre {
+  box-shadow: none !important;
+  background: none !important;
+  margin: 0 !important;
+  margin-bottom: 15px !important;
+  border: none; }
+
+/* line 131, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor iframe, .redactor_editor object, .redactor_editor hr {
+  margin-bottom: 15px !important; }
+
+/* line 134, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor blockquote {
+  margin-left: 3em !important;
+  font-style: italic !important;
+  color: #777; }
+
+/* line 140, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor ul, .redactor_editor ol {
+  padding-left: 2em !important; }
+
+/* line 146, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor ul ul, .redactor_editor ol ol, .redactor_editor ul ol, .redactor_editor ol ul {
+  border: none;
+  margin: 2px !important;
+  padding: 0 !important;
+  padding-left: 2em !important; }
+
+/* line 153, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor ul {
+  list-style-type: disc; }
+
+/* line 157, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor ol {
+  list-style-type: decimal; }
+
+/* line 160, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor dl dt {
+  font-weight: bold; }
+
+/* line 161, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor dd {
+  margin-left: 1em; }
+
+/* line 163, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor table {
+  border-collapse: collapse;
+  font-size: 1em !important; }
+
+/* line 167, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor table td {
+  border: 1px solid #ddd;
+  padding: 5px !important;
+  vertical-align: top; }
+
+/* line 172, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor table thead td {
+  border-bottom: 2px solid #222222 !important;
+  font-weight: bold !important; }
+
+/* line 176, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor code {
+  background-color: #d8d7d7 !important; }
+
+/* line 179, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor pre {
+  font-size: 90% !important;
+  background: #f8f8f8 !important;
+  border: 1px solid #ddd !important;
+  border-radius: 3px !important;
+  padding: 1em !important;
+  white-space: pre;
+  overflow: auto; }
+
+/* line 188, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc; }
+
+/* line 199, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor h1, .redactor_editor h2, .redactor_editor h3, .redactor_editor h4, .redactor_editor h5 {
+  color: #222222;
+  background: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-weight: bold; }
+
+/* line 207, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor b, .redactor_editor strong {
+  /* font-family: robotobold; */
+  font-weight: bold; }
+
+/* line 211, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor i, .redactor_editor em {
+  /* font-family: robotoitalic; */
+  font-style: italic; }
+
+/* line 215, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor h1 {
+  font-size: 36px !important;
+  line-height: 40px !important;
+  margin-bottom: 10px !important; }
+
+/* line 220, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor h2 {
+  font-size: 30px !important;
+  line-height: 38px !important;
+  margin-bottom: 15px !important; }
+
+/* line 225, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor h3 {
+  font-size: 24px !important;
+  line-height: 30px !important;
+  margin-bottom: 10px !important; }
+
+/* line 230, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor h4 {
+  font-size: 18px !important;
+  line-height: 24px !important;
+  margin-bottom: 10px !important; }
+
+/* line 235, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor h5 {
+  font-size: 1em !important;
+  margin-bottom: 10px !important; }
+
+/* line 240, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor.redactor_editor_wym {
+  background: #f6f6f6 !important;
+  padding: 5px 15px !important; }
+
+/* line 256, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor_wym div, .redactor_editor_wym p, .redactor_editor_wym ul, .redactor_editor_wym ol, .redactor_editor_wym table, .redactor_editor_wym dl, .redactor_editor_wym pre, .redactor_editor_wym h1, .redactor_editor_wym h2, .redactor_editor_wym h3, .redactor_editor_wym h4, .redactor_editor_wym h5, .redactor_editor_wym blockquote {
+  background-color: #fff !important;
+  border: 1px solid #e4e4e4 !important;
+  padding: 10px !important;
+  margin: 10px 0 !important; }
+
+/* line 263, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_editor_wym ul, .redactor_editor_wym ol {
+  padding-left: 2em !important; }
+
+/*
+	TOOLBAR
+*/
+/* line 271, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar {
+  /* font-family: robotoregular !important; */
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  list-style: none !important;
+  /* font-size: 0; */
+  /* background: #f1f1f1;
+  background: -moz-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #e2e2e2));
+  background: -webkit-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: -o-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: -ms-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e2e2e2',GradientType=0 ); */
+  overflow: hidden !important;
+  height: 32px !important;
+  height: auto !important; }
+
+/* line 296, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+body .redactor_air .redactor_toolbar {
+  padding-right: 2px !important; }
+
+/* line 299, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar li {
+  float: left !important;
+  margin: 0 !important;
+  padding: 3px 1px;
+  padding-right: 0;
+  list-style: none !important;
+  outline: none; }
+
+/* line 307, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar li.redactor_separator {
+  float: left;
+  height: 34px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #f1f1f1;
+  padding: 0;
+  margin: 0 2px 0 3px !important; }
+
+/* line 315, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar li a {
+  width: 25px;
+  height: 25px;
+  border: 1px solid transparent;
+  display: block;
+  /* line-height: 0; */
+  /* font-size: 0; */
+  cursor: pointer;
+  zoom: 1;
+  outline: none;
+  text-decoration: none;
+  margin-right: 4px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0,0,0,.22); }
+
+/* line 327, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar li.redactor_btn_right {
+  float: none;
+  float: right !important; }
+
+/* line 331, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar li a {
+  display: block;
+  /* text-indent: -9999px; */
+  /* background-image: url(../img/wysiwyg_icons.png); */
+  /* background-repeat: no-repeat; */
+  /* background-position: 0; */
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* line 340, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+  .redactor_toolbar li a {
+    /* background-image: url(../img/wysiwyg_icons.png); */
+    background-size: auto 25px; } }
+
+/* line 347, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar li a:hover {
+  /* border-color: #98a6ba;
+  background-color: #dde4ef;
+  outline: none; */
+  outline: 0;
+  color: #fff;
+  background: #449aef;
+}
+
+/* line 352, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_toolbar li a:active, .redactor_toolbar li a.redactor_act {
+  border-color: #b5b5b5;
+  background-color: #ddd;
+  outline: none; }
+
+/*
+	Toolbar classes
+*/
+/* line 395, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_format_blockquote {
+  font-style: italic;
+  color: #666 !important;
+  padding-left: 10px; }
+
+/* line 400, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_format_pre {
+  font-family: robotoregular; }
+
+/* line 403, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_format_h1, .redactor_format_h2, .redactor_format_h3, .redactor_format_h4 {
+  font-weight: bold; }
+
+/* line 406, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_format_h1 {
+  font-size: 30px;
+  line-height: 36px; }
+
+/* line 410, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_format_h2 {
+  font-size: 24px;
+  line-height: 36px; }
+
+/* line 414, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_format_h3 {
+  font-size: 20px;
+  line-height: 30px; }
+
+/* line 418, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_format_h4 {
+  font-size: 16px;
+  line-height: 26px; }
+
+/*
+	DROPDOWN
+*/
+/* line 426, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_dropdown {
+  font-family: robotoregular;
+  top: 28px;
+  left: 0;
+  z-index: 10000;
+  position: absolute;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  -webkit-box-shadow: 0 2px 4px #ccc;
+  -moz-box-shadow: 0 2px 4px #ccc;
+  box-shadow: 0 2px 4px #ccc;
+  line-height: 21px;
+  padding: 10px; }
+
+/* line 442, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_separator_drop {
+  border-top: 1px solid #ddd;
+  padding: 0 !important;
+  line-height: 0;
+  font-size: 0; }
+
+/* line 448, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_dropdown a {
+  display: block;
+  color: #222222;
+  padding: 3px 5px;
+  text-decoration: none; }
+
+/* line 454, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_dropdown a:hover {
+  color: #444 !important;
+  text-decoration: none;
+  background-color: #dde4ef; }
+
+/* ColorPicker */
+/* line 461, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_color_link {
+  padding: 0 !important;
+  width: 15px !important;
+  height: 15px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset !important;
+  border-radius: 4px !important;
+  float: left !important;
+  border: 2px solid #fff !important;
+  font-size: 0; }
+
+/* line 471, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_color_none {
+  font-size: 11px; }
+
+/* MODAL */
+/* line 478, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal_overlay {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.50;
+  background-color: #333 !important; }
+
+/* line 494, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal {
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #e2e2e2));
+  background: -webkit-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: -o-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: -ms-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: linear-gradient(to bottom, #f7f7f7 0%, #e2e2e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e2e2e2',GradientType=0 );
+  text-shadow: 0 1px 0 #fff;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 5px 60px #222222;
+  border-radius: 3px;
+  z-index: 50001;
+  font-family: robotoregular;
+  font-size: 12px !important;
+  color: #222222; }
+
+/* line 515, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal_header {
+  padding: 11px 30px 0 15px;
+  font-size: 12px;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold; }
+
+/* line 521, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal_content {
+  padding: 20px 30px; }
+
+/* line 525, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal_close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: #777;
+  cursor: pointer; }
+
+/* line 535, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal_close:hover {
+  color: #222222; }
+
+/* line 538, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal label {
+  margin: 10px 0 3px 0 !important;
+  padding: 0 !important;
+  float: none !important;
+  display: block !important; }
+
+/* line 544, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal textarea {
+  margin-top: 4px;
+  display: block; }
+
+/* line 548, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_input {
+  width: 99%;
+  font-size: 14px; }
+
+/* line 552, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_modal_box {
+  height: 350px;
+  overflow: auto;
+  margin-bottom: 10px; }
+
+/* line 557, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_image_box {
+  height: 270px;
+  overflow: auto;
+  margin-bottom: 10px; }
+
+/* line 562, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_image_box_select {
+  display: block;
+  width: 200px;
+  margin-bottom: 15px; }
+
+/* line 567, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_image_box img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  max-width: 100px; }
+
+/* line 573, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_tabs {
+  margin-bottom: 18px; }
+
+/* line 576, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_tabs a {
+  display: inline-block;
+  border: 1px solid #d2d2d2;
+  padding: 4px 14px;
+  font-size: 12px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #222222;
+  line-height: 1;
+  border-radius: 10px;
+  margin-right: 5px; }
+
+/* line 588, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_tabs a:hover, #redactor_tabs a.redactor_tabs_act {
+  background-color: #ddd;
+  padding: 5px 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) inset;
+  border: none;
+  text-shadow: 0 1px 0 #eee;
+  color: #777 !important;
+  text-decoration: none !important; }
+
+/* line 597, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal_footer {
+  padding: 9px 30px 20px 30px;
+  border-radius: 0 0 3px 3px;
+  text-align: right; }
+
+/* line 604, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal input[type="radio"], #redactor_modal input[type="checkbox"] {
+  position: relative;
+  top: -1px; }
+
+/* line 611, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal input[type="text"], #redactor_modal input[type="password"], #redactor_modal input[type="email"], #redactor_modal textarea {
+  position: relative;
+  z-index: 2;
+  font-family: robotoregular;
+  height: 23px;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 1px 2px;
+  background-color: white;
+  color: #333;
+  font-size: 13px;
+  line-height: 1;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: border 0.3s ease-in;
+  -moz-transition: border 0.3s ease-in;
+  -ms-transition: border 0.3s ease-in;
+  -o-transition: border 0.3s ease-in;
+  transition: border 0.3s ease-in; }
+
+/* line 631, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal textarea {
+  line-height: 1.4em; }
+
+/* line 635, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+#redactor_modal input:focus, #redactor_modal textarea:focus {
+  outline: none;
+  border-color: #5ca9e4;
+  box-shadow: 0 0 0 2px rgba(70, 161, 231, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) inset; }
+
+/* line 641, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_modal_btn {
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: robotoregular;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 6px 16px 5px 16px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -ms-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e1e1e1));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -o-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: linear-gradient(top, #ffffff, #e1e1e1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #aaa;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0px #ffffff;
+  color: #222222; }
+
+/* line 669, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_modal_btn:hover {
+  color: #555; }
+
+/* line 672, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_modal_btn:hover {
+  filter: none;
+  background: none;
+  background: #f3f3f3;
+  text-shadow: 0 1px 0px rgba(255, 255, 255, 0.8);
+  text-decoration: none; }
+
+/* Drag and Drop Area */
+/* line 682, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_droparea {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 5px; }
+
+/* line 688, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_droparea .redactor_dropareabox {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  width: 99%;
+  background-color: #fff;
+  padding: 60px 0;
+  border: 2px dashed #bbb; }
+
+/* line 697, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_droparea .redactor_dropareabox, .redactor_dropalternative {
+  color: #555;
+  font-size: 12px; }
+
+/* line 701, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_dropalternative {
+  margin: 4px 0 2px 0; }
+
+/* line 704, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_dropareabox.hover {
+  background: #efe3b8;
+  border-color: #aaa; }
+
+/* line 708, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_dropareabox.error {
+  background: #f7e5e5;
+  border-color: #dcc3c3; }
+
+/* line 712, /home/ubuntu/workspace/src/sass/assets/_redactor.scss */
+.redactor_dropareabox.drop {
+  background: #f4f4ee;
+  border-color: #e0e5d6; }
+
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;src:url(../webfonts/fa-solid-900.eot);src:url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Free";font-weight:900}
+.fab,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:.08em solid #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{animation:fa-spin 2s infinite linear}.fa-pulse{animation:fa-spin 1s infinite steps(8)}@keyframes fa-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.fa-rotate-90{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";transform:rotate(90deg)}.fa-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";transform:rotate(180deg)}.fa-rotate-270{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";transform:scaleX(-1)}.fa-flip-vertical{transform:scaleY(-1)}.fa-flip-horizontal.fa-flip-vertical,.fa-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)"}.fa-flip-horizontal.fa-flip-vertical{transform:scale(-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;line-height:2em;position:relative;vertical-align:middle;width:2em}.fa-stack-1x,.fa-stack-2x{left:0;position:absolute;text-align:center;width:100%}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}
+.redactor_toolbar li a {
+  font-family:"Font Awesome 5 Free";font-weight:900;
+  display: flex;
+  align-items: center;
+  /* align-content: center; */
+  justify-content: center;}
+
+/*
+	BUTTONS
+	step 25px
+*/
+body .redactor_toolbar li a.redactor_btn_html::before {
+  /* fa-code */
+  content:"\f121"; }
+
+body .redactor_toolbar li a.redactor_btn_formatting::before {
+  /* fa-heading */
+  content:"\f1dc"; }
+
+body .redactor_toolbar li a.redactor_btn_bold::before {
+  /* fa-bold */
+  content:"\f032"; }
+
+body .redactor_toolbar li a.redactor_btn_italic::before {
+  /* fa-italic */
+  content:"\f033"; }
+
+body .redactor_toolbar li a.redactor_btn_deleted::before {
+  /* fa-strikethrough */
+  content:"\f0cc"; }
+
+body .redactor_toolbar li a.redactor_btn_unorderedlist::before {
+  /* fa-list-ul */
+  content:"\f0ca"; }
+
+body .redactor_toolbar li a.redactor_btn_orderedlist::before {
+  /* fa-list-ol */
+  content:"\f0cb"; }
+
+body .redactor_toolbar li a.redactor_btn_outdent::before {
+  /* .fa-outdent */
+  content:"\f03b"; }
+
+body .redactor_toolbar li a.redactor_btn_indent::before {
+  /* fa-indent */
+  content:"\f03c"; }
+
+body .redactor_toolbar li a.redactor_btn_image::before {
+  /* fa-image */
+  content:"\f03e"; }
+
+body .redactor_toolbar li a.redactor_btn_video::before {
+  /* fa-video */
+  content:"\f03d";
+  /* fa-youtube
+  content:"\f167"; */
+}
+
+body .redactor_toolbar li a.redactor_btn_file::before {
+  /* fa-file */
+  content:"\f15b"; }
+
+body .redactor_toolbar li a.redactor_btn_table::before {
+  /* fa-table */
+  content:"\f0ce"; }
+
+body .redactor_toolbar li a.redactor_btn_link::before {
+  /* fa-link */
+  content:"\f0c1"; }
+
+body .redactor_toolbar li a.redactor_btn_fontcolor::before {
+  /* fa-font */
+  content:"\f031"; }
+
+body .redactor_toolbar li a.redactor_btn_backcolor::before {
+  /* fa-fill */
+  content:"\f575"; }
+
+body .redactor_toolbar li a.redactor_btn_alignleft::before {
+  /* fa-align-left */
+  content:"\f036"; }
+
+body .redactor_toolbar li a.redactor_btn_aligncenter::before {
+  /* fa-align-center */
+  content:"\f037"; }
+
+body .redactor_toolbar li a.redactor_btn_alignright::before {
+  /* fa-align-right */
+  content:"\f038"; }
+
+body .redactor_toolbar li a.redactor_btn_justify::before {
+  /* fa-align-justify */
+  content:"\f039"; }
+
+body .redactor_toolbar li a.redactor_btn_horizontalrule::before {
+  /* background-position: -475px; */
+  /* background: url('http://support.omniupdate.com/oucampus10/images/pages/edit/wysiwyg-editors/toolbar/justedit-icons/index_justedit-horizontal.png');  */
+  background: url('data:image/svg+xml;utf8,<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:rgb(0,0,0);stroke-width:2"></line>Sorry, your browser does not support inline SVG.</svg>');
+  content: "";
+  width: 80%;
+  height: 80%;
+}
+
+body .redactor_toolbar li a.redactor_btn_underline::before {
+  /* fa-underline */
+  content:"\f0cd"; }
+
+body .redactor_toolbar li a.redactor_btn_fullscreen::before {
+  /* fa-expand-arrows-alt */
+  content:"\f31e"; }
+
+body .redactor_toolbar li a.redactor_btn_normalscreen::before {
+  /* fa-compress */
+  content:"\f066"; }
+
+body .redactor_toolbar li a.redactor_btn_clips::before {
+  /* fa-paperclip */
+  content:"\f0c6"; }
+
+body .redactor_toolbar li a.redactor_btn_alignment::before {
+  /* background-position: -625px; */
+  /* background: url(https://cdn.shopify.com/s/files/1/0615/0829/files/site_icon_32x32.png) no-repeat;
+  background-size: 24px 19px;
+  background-position-x: 0px;
+  background-position-y: 4px; */
+  
+  /* fa-sliders-h */
+  content:"\f1de"; }

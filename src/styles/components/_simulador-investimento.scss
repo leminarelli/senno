@@ -1,0 +1,66 @@
+.simulador__votacao {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+
+    .btn-success {
+        background-color: #04486E !important;
+        border-color: #04486E !important;
+        color: white;
+    }
+    
+    &_item {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+
+        .fa {
+            font-size: 25px;
+            /* margin-right: 10px; */
+        }
+
+        button .fa {
+            font-size: 10px;
+        }
+
+        &_perc-bar {
+            position: relative;
+            width: 85%;
+            height: 6px;
+            border: 1px solid #BCBDBE;
+            border-radius: 4px;
+            background: #F4F7F9;
+
+            
+
+            &-track {
+                position: relative;
+                border-radius: 4px;
+                
+                &.red {
+                    height: 100%;
+                    background: $color-red;
+                }
+
+                &.yellow {
+                    height: 100%;
+                    background: $color-yellow;
+                }
+
+                &.green {
+                    height: 100%;
+                    background: $color-green;
+                }
+            }
+        }
+
+        &_percent {
+            font-size: 15px;
+            text-align: left;
+            margin-top: 5px;
+            width: 13%;
+        }
+    }
+}

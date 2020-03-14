@@ -1,0 +1,147 @@
+/*
+** FORM GROUP DIFICULDADE IMPACTO
+*/
+.form-group-dificuldade-impacto:before {
+    content: '';
+    height: 20%;
+    width: 15px;
+    display: inline-block;
+    position: absolute;
+    left: -24px;
+    top: 8px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+.form-group-dificuldade-impacto.open:before {
+    height: 40%;
+}
+
+.form-group-dificuldade-impacto:after {
+    content: '';
+    height: 20%;
+    width: 15px;
+    display: inline-block;
+    position: absolute;
+    left: -24px;
+    bottom: 10px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+.form-group-dificuldade-impacto.open:after {
+    height: 40%;
+}
+
+
+
+/*
+** FORM WIZARD
+*/
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+
+/*form styles*/
+#msform {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    /* background: white; */
+    border: 0 none;
+    border-radius: 3px;
+    /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+    /* padding: 20px 30px; */
+    
+    box-sizing: border-box;
+
+    width: 100%;
+    margin: 2rem 0%;
+
+    /*stacking fieldsets above each other*/
+    position: absolute;
+}
+@media (min-width: 768px) {
+    #msform fieldset {
+        /* Sem TipBox */
+        /* width: 80%;
+        margin: 0 10%; */
+
+        /* Com TipBox */
+        width: calc(100% - 150px);
+        margin: 2rem 75px;
+    }
+}
+.wizard-fieldset {
+    /* background: white; */
+    border: 0 none;
+    border-radius: 3px;
+    /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+    
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0%;
+    text-align: initial;
+}
+@media (min-width: 768px) {
+    .wizard-fieldset {
+        /* Sem TipBox */
+        /* width: 80%;
+        margin: 0 10%; */
+
+        /* Com TipBox */
+        width: calc(100% - 150px);
+        margin: 0 75px;
+    }
+}
+/*Hide all except first fieldset*/
+#msform fieldset {
+    text-align: initial;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    /* margin: 10px 5px; */
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.switch label .bmd-switch-track {
+    background-image: linear-gradient(90deg,rgba(0,0,0,.26) 0,rgba(0,0,0,.26) 50%,#7aa5bd 0,#7aa5bd)
+}
+
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb, input[type=range]::-ms-thumb {
+    background: red !important;
+    background-color: red !important;
+}

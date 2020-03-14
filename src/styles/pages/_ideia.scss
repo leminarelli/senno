@@ -1,0 +1,404 @@
+
+
+/*
+** COVER IDEIA
+*/
+
+.cover-content a.cover-ideia-author {
+    top: var(--cover-content-padding);
+    left: calc(var(--cover-content-padding));
+    text-align: left;
+    .tile-author {
+        display: flex;
+        a {
+            position: relative !important;
+        }
+    }
+
+    .tile-date {
+        text-align: right;
+    }
+}
+.cover-content a.cover-ideia-plataforma {
+    top: var(--cover-content-padding);
+    right: calc(var(--cover-content-padding));
+    background: rgba(255,255,255,0.25);
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.cover-content a.cover-ideia-coautores {
+    bottom: var(--cover-content-padding);
+    left: calc(var(--cover-content-padding));
+}
+
+.cover-content a.cover-ideia-flag {
+    bottom: var(--cover-content-padding);
+    right: calc(0px + var(--cover-content-padding));
+
+    .fa {
+        margin-top: -5px;
+    }
+}
+.cover-content a.cover-ideia-pin {
+    bottom: var(--cover-content-padding);
+    right: calc(100px + var(--cover-content-padding));
+
+    .fa {
+        margin-top: -5px;
+    }
+}
+.cover-content a.cover-ideia-share {
+    bottom: var(--cover-content-padding);
+    right: calc(50px + var(--cover-content-padding));
+
+    .fa {
+        margin-top: -5px;
+    }
+}
+
+
+
+/*
+** IDEIA PAGE
+*/
+
+.ideia-page {
+    max-width: 100%;
+    margin: auto;
+    background: white;
+
+    .avaliacoes-icons .mb-2 {
+        margin-bottom: 0 !important;
+    }
+
+    .breadcrumb {
+        background: transparent !important;
+        margin: 0;
+
+        .nome-ideia {
+            padding: 5px 18px;
+            // border: 1px solid black;
+            border-radius: 20px;
+            background-color: rgba(55, 55, 55, 0.055);
+            border: none;
+        }
+
+        .circle-border-black {
+            background-color: rgba(55, 55, 55, 0.055);
+            border: none;
+        }
+
+        .border-black {
+            background-color: rgba(55, 55, 55, 0.055);
+            border: none;
+        }
+    }
+
+    .progesso {
+            
+        &_item {
+            display: flex;
+            padding-bottom: 27px;
+            justify-content: center;
+
+
+            .fa {
+                font-size: 27px;
+                margin-right: 15px;
+            }
+
+            &_perc-bar {
+                position: relative;
+                width: 100%;
+                height: 6px;
+                border: 1px solid #BCBDBE !important;
+                border-radius: 4px;
+                background: #F4F7F9;
+
+                
+
+                &-track {
+                    position: relative;
+                    border-radius: 4px;
+                    
+                    &.red {
+                        height: 100%;
+                        background: $color-red !important;
+                    }
+
+                    &.yellow {
+                        height: 100%;
+                        background: $color-yellow !important;
+                    }
+
+                    &.green {
+                        height: 100%;
+                        background: $color-green !important;
+                    }
+                }
+            }
+
+            &_percent {
+                font-size: 16px;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ideia-page {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+.ideia-summary {
+    transition: all 0.3s;
+    // padding: 0px 85px;
+}
+
+.ideia-resumo {
+    // margin: 1em;
+    margin: 2em 0;
+}
+
+.ideia-tags {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.ideia-status {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    background: white;
+    // margin: 1em;
+}
+
+.ideia-actions {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.ideia-action {
+    display: inline-block;
+    width: 200px;
+}
+
+.ideia-timespan {
+    top: var(--cover-content-padding);
+    right: calc(var(--cover-content-padding));
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    max-width: 16em;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.avaliacao__ideia {
+    width: 100vw;
+    max-width: none;
+    position: relative;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    cursor: auto !important;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+
+    .content {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        padding-left: 140px;
+        min-height: auto;
+    }
+
+    .flag {
+        font-size: 40px;
+        color: $color-black;
+        padding: 60px 0px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        &.aprovar {
+            background-color: $color-green;
+        }
+
+        &.reprovar {
+            background-color: $color-red;
+        }
+
+        span {
+            vertical-align: middle;
+        }
+
+        [class*="icon-"] {
+            font-size: 60px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        
+    }
+}
+
+.apoioFinanceiro, #nav-sponsor {
+    .btn-success {
+        background-color: #04486E !important;
+        border-color: #04486E !important;
+        font-size: 10px;
+    }
+
+    input {
+        display: inline-block;
+        width: 68%;
+        border: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+#nav-sponsor {
+    .btn-apoiar {
+        transition: all 0.3s ease-in-out;
+
+        &.pendente {
+            background-color: rgba($color-gray, 0.7) !important;
+        }
+
+        &.apoiado {
+            width: 100vw;
+            max-width: none;
+            position: relative;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            cursor: auto !important;
+            width: 100vw;
+            left: 50%;
+            right: 50%;
+        }
+
+    }
+
+    textarea[name="sponsorApoioInstitucionalJustificativa"] {
+        width: 100%;
+        border: 1px dashed $color-gray;
+        padding: 20px;
+        background: transparent;
+        font-size: 14px;
+        font-weight: 400;
+
+        &:focus {
+            outline: none
+        }
+    }
+}
+
+
+
+
+
+
+/*
+** IDEIA EDIT
+*/
+.ideia-edit {
+    .progressbar li.active {
+        color: var(--ideia-background-color);
+    }
+    #progressbar li.active:before, #progressbar li.active:after {
+        background: var(--ideia-background-color);
+    }
+    #msform {
+        .action-button {
+            background: var(--ideia-background-color);
+        }
+    }
+    /* Steps Qty */
+    #progressbar li, .progressbar li {
+        width: calc(100% / 5);
+    }
+    #progressbar li .wizard-step-inner-circle, #progressbar li .wizard-step-outer-circle {
+        stroke: gray !important;
+    }
+    
+    #progressbar li.active .wizard-step-inner-circle, #progressbar li.active .wizard-step-outer-circle {
+        stroke: var(--ideia-background-color) !important;
+    }
+    #progressbar li.active .wizard-step-inner-circle {
+        fill: var(--ideia-background-color) !important;
+    }  
+
+    .avaliacao__header {
+        .close {
+            font-size: 14px;
+        }
+    }
+    
+    .avaliacao__content {
+        textarea {
+            min-height: 100%;
+        }
+
+    }
+
+}
+
+
+.ideia-edit, .ideia-page {
+    .list__anexos {
+
+        background: white;
+
+        &_item {
+            border-bottom: 1px solid  rgba($color-gray,0.1);
+            
+            &-header {
+                span:first-child {
+                    padding-left: 24px;
+                }
+            }
+
+            &-date {
+                color: rgba($color-gray,0.7);
+            }
+        }
+    }
+}
+
+.ideia-icon-status {
+    border-radius: 3px;
+    padding: 5px 12px;
+    display: inline-block;
+    width: 100%;
+
+    &.aprovada {
+        background: $color-green;
+    }
+
+    &.pendente {
+        background: $color-yellow;
+    }
+
+    &.reprovada {
+        background: $color-red;
+    }
+
+    &.rascunho {
+        background: $color-gray;
+    }
+
+    &.arquivada {
+        background: $color-purple;
+    }
+}
+

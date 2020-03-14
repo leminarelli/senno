@@ -1,0 +1,104 @@
+/*
+** PAGE - COVER
+*/
+
+.cover {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-print-color-adjust: exact;
+}
+
+.cover-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 100%;
+    height: 500px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.grupo-cover-overlay {
+    display: block;
+    width: 100%;
+    height: 470px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.usuario-cover-overlay {
+    display: block;
+    width: 100%;
+    height: 230px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.cover-content {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: var(--cover-content-padding);
+}
+
+.cover-info {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+
+    .icons-avaliacoes {
+        width: 180px;
+        align-items: center;
+        margin: 0 auto !important;
+        margin-top: 40px !important;
+        
+
+        [class*="icon-"] {
+            font-size: 12px;
+            // border: 1px solid white;
+            background: rgba(255,255,255,0.255);
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 20px;
+
+            &:before {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+            }
+        }
+
+        .icon-dollar {
+            font-size: 10px;
+        }
+    }
+}
+
+.cover-title {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 16px 32px;
+}
+
+.cover-content a {
+    position: absolute;
+}

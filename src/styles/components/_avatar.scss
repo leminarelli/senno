@@ -1,0 +1,146 @@
+/*
+** AVATAR
+*/
+
+img.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.tile-author {
+    display: inline-block;
+    margin-right: 4px;
+    align-items: center;
+}
+
+img.participantes-avatar {
+    width: 55px;
+    height: 50px;
+}
+
+img.tile-group-avatar,
+img.tile-author-avatar {
+    // width: 1.8em;
+    // height: 1.8em;
+    width: 35px;
+    height: 35px;
+}
+
+img.popover-autor-avatar {
+    width: 100px;
+    height: 100px;
+
+}
+
+.popover-autor-avatar-cover {
+    position: relative;
+
+    [class*='icon-'] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 40px;
+        margin-top: -20px;
+        margin-left: 43px;
+    }
+}
+
+.popover-color-avatar {
+    height: 55px;
+    width: 100%;
+    border-radius: .3em .3em 0 0;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.popover-autor-avatar-info {
+    position: relative;
+    padding-top: 0.75rem;
+}
+
+.popover-autor-info {
+    padding-bottom: 0px !important;
+}
+
+.popover-autor-info-name {
+    padding-top: 13px;
+    font-size: 18px;
+    font-weight: normal !important;
+
+    @extend .line-clamp;
+}
+
+.popover-autor-info-cargo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 14px;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        background: $color-gray;
+        width: 60%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.popover-participacao {
+    text-align: center;
+    font-size: 3.2rem;
+    padding-top: 6px;
+
+    &.aprovado {
+        color: $color-green;
+
+        .icon-reprovado,
+        .icon-pendente {
+            display: none;
+        }
+    }
+
+    &.reprovado {
+        color: $color-red;
+
+        .icon-aprovado,
+        .icon-pendente {
+            display: none;
+        }
+    }
+
+    &.pendente {
+
+        .icon-reprovado,
+        .icon-aprovado {
+            display: none;
+        }
+    }
+}
+
+
+.popover-author {
+    .arrow {
+        border-bottom-color: white;
+        margin-top: 1px;
+
+        &:after,
+        &:before {
+            border-bottom-color: inherit;
+        }
+    }
+
+    .senno-popover-body {
+        .row {
+            margin: 0;
+        }
+    }
+}

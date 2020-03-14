@@ -1,0 +1,109 @@
+/*
+** SWOT
+*/
+
+.swot {
+    border-left: 20px solid #888;
+    display: inline-block;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 2em;
+    border-radius: 6px;
+    box-shadow: none;
+}
+.swot:before {
+    content: " ";
+    padding: 20px;
+    padding-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.swot:after {
+    content: url('/images/value_proposition_canvas_200px.svg');
+    display: block;
+    margin-left: calc(50%);
+    transform: translateX(-100px);
+    width: 150px;
+    height: 150px;
+}
+
+.swot-content {
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: calc(100% - 20px);
+}
+
+@media (min-width: 1010px) {
+    .swot:after {
+        content: "";
+        background-image: url('/images/value_proposition_canvas_200px.svg');
+        display: block;
+        right: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0px;
+        width: 150px;
+        height: 150px;
+        background-size: 100% auto;
+    }
+    .swot-content {
+        width: calc(100% - 200px - 0.75em);
+    }
+}
+
+.swot-forcas {
+    border-left: 20px solid #FD612C;
+    border-bottom: 1px solid #FD612C;
+    border-top: 1px solid #FD612C;
+    border-right: 1px solid #FD612C;
+}
+.swot-forcas:before {
+    content: "Forças";
+}
+.swot-forcas::after {
+    background-image: url('/images/swot_200px_forcas.svg');
+}
+
+.swot-oportunidades {
+    border-left: 20px solid #EEC300;
+    border-bottom: 1px solid #EEC300;
+    border-top: 1px solid #EEC300;
+    border-right: 1px solid #EEC300;
+}
+.swot-oportunidades:before {
+    content: "Oportunidades";
+}
+.swot-oportunidades::after {
+    background-image: url('/images/swot_200px_oportunidades.svg');
+}
+
+.swot-fraquezas {
+    border-left: 20px solid #62D26F;
+    border-bottom: 1px solid #62D26F;
+    border-top: 1px solid #62D26F;
+    border-right: 1px solid #62D26F;
+}
+.swot-fraquezas:before {
+    content: "Fraquezas";
+}
+.swot-fraquezas::after {
+    background-image: url('/images/swot_200px_fraquezas.svg');
+}
+
+.swot-ameacas {
+    border-left: 20px solid #4186E0;
+    border-bottom: 1px solid #4186E0;
+    border-top: 1px solid #4186E0;
+    border-right: 1px solid #4186E0;
+}
+.swot-ameacas:before {
+    content: "Ameaças";
+}
+.swot-ameacas::after {
+    background-image: url('/images/swot_200px_ameacas.svg');
+}

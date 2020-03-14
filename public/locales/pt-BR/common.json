@@ -1,0 +1,889 @@
+{
+    "richTextEditor": {
+        "placeholder": {
+            "default": "Comece a escrever..."
+        }
+    },
+    "kpis": {
+        "page_platform_page": {
+            "connections": {
+                "title": "Conexões"
+            },
+            "ideas": {
+                "title": "Ideias"
+            },
+            "ideas-approved": {
+                "title": "Ideias Aprovadas"
+            },
+            "ideas-assessed": {
+                "title": "Ideias Avaliadas"
+            },
+            "ideas-supported": {
+                "title": "Ideias Patrocinadas"
+            },
+            "investments": {
+                "title": "Investimentos"
+            },
+            "participants": {
+                "title": "Participantes"
+            },
+            "votes": {
+                "title": "Votos"
+            }
+        }
+    },
+    "menu_header_busca": {
+        "search": "Busca",
+        "itensWith": "Itens com",
+        "seeAll": "Ver todos",
+        "searchBy": "Busque por: Nome e Tags"
+    },
+    "modal_aprovar_conexao": {
+        "title": "Aprovar Conexão"
+    },
+    "modal_aprovar_ideia": {
+        "title": "Aprovar Ideia"
+    },
+    "modal_aprovar_participacao": {
+        "title": "Aprovar Participação",
+        "listTitle": "Grupos Convidados"
+    },
+    "modal_avaliacao": {
+        "title": "Avaliação"
+    },
+    "modal_avaliacoes": {
+        "title": "Avaliações"
+    },
+    "modal_avaliar_dificuldade": {
+        "title": "Avaliar Ideia"
+    },
+    "modal_avaliar_disrupcao": {
+        "title": "Avaliar Ideia"
+    },
+    "modal_avaliar_impacto": {
+        "title": "Avaliar Ideia"
+    },
+    "modal_avaliar_retorno": {
+        "title": "Avaliar Ideia",
+        "assessmentDecription": "Retorno do investimento (1 - Baixo Retorno e 10 - Alto Retorno)"
+    },
+    "modal_avaliar_tempo": {
+        "title": "Avaliar Ideia",
+        "assessmentDecription": "Tempo para implementar a idéia (1 - Curto Prazo e 10 - Longo Prazo)"
+    },
+    "modal_coautores": {
+        "title": "Coautores"
+    },
+    "modal_compartilhar": {
+        "title": "Compartilhar"
+    },
+    "modal_conectar_ideia": {
+        "title": "Conectar Ideias"
+    },
+    "modal_conectar_ideia_justificativa": {
+        "title": "Conectar Ideia - Justificativa"
+    },
+    "modal_conexao": {
+        "title": "Conexão"
+    },
+    "modal_conexoes": {
+        "title": "Conexões"
+    },
+    "modal_confirmar_apoio_financeiro_ideia": {
+        "title": "Confirmar Apoio Financeiro"
+    },
+    "modal_confirmar_apoio_institucional_ideia": {
+        "title": "Confimrar Apoio Institucional"
+    },
+    "modal_confirmar_arquivar_ideia": {
+        "title": "Arquivar Ideia"
+    },
+    "modal_confirmar_arquivar_plataforma": {
+        "title": "Arquivar Plataforma"
+    },
+    "modal_confirmar_deletar_grupo": {
+        "title": "Deletar Grupo",
+        "message": "Após esta confirmação você não poderá recuperar este grupo.",
+        "messageConfirm": "Deseja deletar este grupo?"
+    },
+    "modal_confirmar_deletar_ideia": {
+        "title": "Deletar Ideia"
+    },
+    "modal_confirmar_deletar_plataforma": {
+        "title": "Deletar Plataforma"
+    },
+    "modal_confirmar_investimento_ideia": {
+        "title": "Investir"
+    },
+    "modal_confirmar_investimento_ideia_aprovacao": {
+        "title": "Confirmar Investimento"
+    },
+    "modal_convidar_agente": {
+        "title": "Convidar Agente"
+    },
+    "modal_convidar_coautor": {
+        "title": "Convidar Coautor"
+    },
+    "modal_convidar_grupo": {
+        "title": "Convidar Grupo"
+    },
+    "modal_convidar_moderador": {
+        "title": "Convidar Moderador"
+    },
+    "modal_convidar_sponsor": {
+        "title": "Convidar Sponsor"
+    },
+    "modal_denunciar": {
+        "title": "Denunciar",
+        "porn_content": "Conteúdo pornográfico",
+        "repulsive_violent_content": "Conteúdo violento ou repulsivo",
+        "abusive_prejudiced_content": "Conteúdo preconceituoso ou abusivo",
+        "dangerous_content": "Conteúdo perigoso",
+        "child_abuse": "Abuso infantil",
+        "terrorism_apology": "Apologia ao terrorismo",
+        "spam_fake": "Spam ou fake",
+        "copyright_infringement": "Violação de direitos autorais",
+        "other": "Outro"
+    },
+    "modal_editar_perfil": {
+        "title": "Editar Perfil"
+    },
+    "modal_encerrar_plataforma": {
+        "title": "Encerrar Plataforma"
+    },
+    "modal_galeria_upload": {
+        "title": "Selecione uma Imagem"
+    },
+    "modal_grupos": {
+        "title": "Grupos"
+    },
+    "modal_investidores_investimento_ideia": {
+        "title": "Investimentos"
+    },
+    "modal_investimentos": {
+        "title": "Investimentos"
+    },
+    "modal_investir_ideia": {
+        "title": "Investir"
+    },
+    "modal_invite_member": {
+        "add_many_at_once": "Adicionar vários de uma vez",
+        "email_addresses": "Endereços de email",
+        "invite": "Convidar",
+        "title": "Convidar Membros"
+    },
+    "modal_medalhas": {
+        "title": "Medalhas"
+    },
+    "modal_medalha_sobre": {
+        "title": "Medalha",
+        "medalDescription": "Descrição da Medalha",
+        "createdBy": "Criada por"
+    },
+    "modal_moderadores": {
+        "title": "Moderadores"
+    },
+    "modal_nova_ideia": {
+        "title": "Nova Ideia"
+    },
+    "modal_nova_medalha": {
+        "title": "Nova Medalha"
+    },
+    "modal_nova_plataforma": {
+        "title": "Nova Plataforma"
+    },
+    "modal_novo_grupo": {
+        "titleEdit": "Editar Grupo",
+        "titleNew": "Novo Grupo"
+    },
+    "modal_pagamento": {
+        "title": "Pagamento"
+    },
+    "modal_participantes": {
+        "title": "Participantes"
+    },
+    "modal_participar": {
+        "title": "Participar",
+        "yourInvitedGroups": "Seus Grupos Convidados"
+    },
+    "modal_plataforma_quantidade_ideias": {
+        "title": "Quantidade de Ideias"
+    },
+    "modal_premiar_ideia": {
+        "title": "Premiar Ideia"
+    },
+    "modal_premiar_ideia_justificativa": {
+        "title": "Premiar Ideia - Justificativa"
+    },
+    "modal_resultado_aprovacao_ideia": {
+        "title": "Aprovação"
+    },
+    "modal_resultado_avaliacao": {
+        "title": "Avaliação"
+    },
+    "modal_salvar_favorito": {
+        "title": "Favoritos"
+    },
+    "modal_show_grupo": {
+        "title": "Grupo"
+    },
+    "modal_show_medalha": {
+        "title": "Medalha"
+    },
+    "modal_show_patrocinio_ideia": {
+        "title": "Patrocínio"
+    },
+    "modal_show_patrocinio_metas": {
+        "title": "Patrocínio"
+    },
+    "modal_simular_investimento_ideia": {
+        "title": "Simular Investimento"
+    },
+    "modal_simular_investimento_ideia_aprovacao": {
+        "title": "ROI Simulado"
+    },
+    "modal_sponsors": {
+        "title": "Sponsors"
+    },
+    "modal_tempo_restante": {
+        "title": "Tempo Restante"
+    },
+    "modal_title_ellipsis_menu": {
+        "help": "Ajuda",
+        "sysop": "Sysop"
+    },
+    "modal_votar_ideia": {
+        "title": "Votos",
+        "youHave": "Você possui"
+    },
+    "modal_votos_ideia": {
+        "title": "Votos",
+        "partialResult": "Resultado Parcial"
+    },
+    "page_drafts": {
+        "title": "Rascunhos",
+        "showcase": {
+            "platforms": {
+                "title": "Plataformas em rascunho",
+                "subtitle": "Termine de editar suas plataformas para publicar."
+            },
+            "ideas": {
+                "title": "Ideias em rascunho",
+                "subtitle": "Termine de editar suas ideias para publicar."
+            }
+        }
+    },
+    "page_groups_list": {
+        "loadedAll": "Por enquanto, todos as grupos foram carregados",
+        "loadMore": "Carregar Mais",
+        "filters": {
+            "all": "Todos",
+            "myGroups": "Meus Grupos",
+            "participations": "Grupos que Participo"
+        }
+    },
+    "page_home": {
+        "title": "Home",
+        "showcase": {
+            "platforms": {
+                "title": "Plataformas recomendadas",
+                "subtitle": "Seleção baseada nas suas atividades recentes."
+            },
+            "ideas": {
+                "title": "Ideias recomendadas",
+                "subtitle": "Seleção baseada nas suas atividades recentes."
+            }
+        }
+    },
+    "page_platforms": {
+        "title": "Platformas"
+    },
+    "page_ideas": {
+        "title": "Ideias"
+    },
+    "page_innovations": {
+        "title": "Inovações"
+    },
+    "page_groups": {
+        "title": "Grupos"
+    },
+    "page_reports": {
+        "title": "Relatórios"
+    },
+    "page_bookmarks": {
+        "title": "Favoritos"
+    },
+    "page_history": {
+        "title": "Histórico"
+    },
+    "page_help": {
+        "title": "Ajuda"
+    },
+    "page_investments": {
+        "title": "Investimentos"
+    },
+    "page_notifications": {
+        "title": "Notificações"
+    },
+    "page_profile": {
+        "title": "Perfil"
+    },
+    "page_search": {
+        "title": "Busca",
+        "itensWith": "Itens com",
+        "refineSearch": "Refinar Busca",
+        "seeAll": "Ver todos",
+        "tryAgain": "Tente Novamente",
+        "notFound": {
+            "agent": "Nenhum agente encontrado",
+            "group": "Nenhum grupo encontrada",
+            "idea": "Nenhuma ideia encontrada",
+            "moderator": "Nenhum moderador encontrado",
+            "platform": "Nenhuma plataforma encontrada",
+            "sponsor": "Nenhum sponsor encontrado"
+        }
+    },
+    "page_settings": {
+        "title": "Configurações",
+        "sidemenu": {
+            "profile": "Configurações de perfil",
+            "integrations": "Integrações",
+            "billing": "Billing",
+            "security": "Segurança",
+            "organizations": "Organizações",
+            "account": "Conta",
+            "userTeamManagement":"Gestão de Usuários & Organização",
+            "logout": "Sair",
+            "activeUsers": "Usuários ativos"
+        },
+        "tabs": {
+            "profile-information": "Detalhes",
+            "profile-access": "Acesso",
+            "profile-integrations": "Integrações",
+            "profile-notifications": "Notificações",
+            "profile-display": "Exibição",
+            "integration-summary": "Resumo",
+            "billing-summary": "Resumo",
+            "billing-history": "Histórico",
+            "billing-settings": "Configurações",
+            "billing-payment-methods": "Métodos de Pagamento",
+            "billing-subscription": "Assinatura",
+            "security-summary": "Resumo",
+            "security-invites": "Convites",
+            "organization-summary": "Resumo"
+        },
+        "tabcontent": {
+            "profile": {
+                "details": {
+                    "profileDetailsTitle": "Detalhes do perfil",
+                    "emailAddressTitle": "Endereço de email",
+                    "emailAddressSubtitle": "Seu endereço de email é",
+                    "newEmailAddress": "Novo endereço de email",
+                    "currentPassword": "Senha atual",
+                    "updateEmail": "Atualizar email",
+                    "passwordTitle": "Senha",
+                    "newPassword": "Nova senha",
+                    "savePassword": "Salvar senha",
+                    "cantRememberPassword": "Não se lembra da sua senha atual?",
+                    "resetPasswordEmail": "Redefina sua senha por e-mail",
+                    "languageTitle": "Idioma",
+                    "preferredLanguage": "Seu idioma preferido para comunicação",
+                    "deleteMyProfile": "Excluir meu perfil",
+                    "deleteWarning": "Você receberá um e-mail para confirmar sua decisão.\nObserve que todas as placas que você criou serão apagadas permanentemente.\nVocê pode salvar backups dessas placas ou exportá-las."
+                },
+                "display": {
+                    "language": "Idioma"
+                }
+            },
+            "organizations": {
+                "summary": {
+                    "currentOrganizationTitle": "Organização atual",
+                    "organizationsImIn": "Organizações que participo",
+                    "newOrganizationTitle": "Nova organização",
+                    "newOrganizationName": "Nome",
+                    "createOrganization": "Criar organização"
+                }
+            },
+            "billing": {
+                "payment-methods": {
+                    "buttons": {
+                        "add-card": "Cadastrar cartão"
+                    }
+                }
+            },
+            "security": {
+                "invite_members": "Convidar membros"
+            }
+        },
+        "messages": {
+            "success": {
+                "passwordChanged": "Senha alterada com sucesso",
+                "emailChanged": "Email alterado com sucesso"
+            },
+            "error": {
+                "callback": {
+                    "notAFunction": "Callback is not a function"
+                },
+                "password": {
+                    "noMatch": "Senha inválida"
+                },
+                "email": {
+                    "inUse": "Este email já está sendo usado"
+                }
+            }
+        }
+    },
+    "page_platforms_list": {
+        "loadedAll": "Por enquanto, todas as plataformas foram carregadas",
+        "loadMore": "Carregar Mais",
+        "filters": {
+            "myPlatforms": "Minhas Plataformas",
+            "highlights": "Destaques",
+            "archived": "Arquivadas",
+            "invited": "Convites",
+            "participations": "Participações"
+        },
+        "sort": {
+            "recents": "Recentes",
+            "aToZ": "A-Z"
+        }
+    },
+    "page_platform_page": {
+        "tabs": {
+            "platform-description": {
+                "__label": "Descrição"
+            },
+            "platform-attachments": {
+                "__label": "Anexos"
+            },
+            "platform-swot": {
+                "__label": "SWOT"
+            },
+            "platform-kpis": {
+                "__label": "KPI's"
+            },
+            "platform-moderator": {
+                "__label": "Moderador"
+            }
+        }
+    },
+    "page_platform_edit": {
+        
+    },
+    "page_group_page": {
+        "tabs": {
+            "group-summary": {
+                "__label": "Resumo"
+            },
+            "group-platforms": {
+                "__label": "Platformas"
+            }
+        }
+    },
+    "page_idea_edit": {
+        "seeAllArticles": "Ver todos"
+    },
+    "page_ideas_list": {
+        "loadedAll": "Por enquanto, todas as ideias foram carregadas",
+        "loadMore": "Carregar Mais",
+        "filters": {
+            "myIdeas": "Minhas Ideias",
+            "highlights": "Destaques",
+            "approved": "Aprovadas",
+            "archived": "Arquivadas",
+            "pending": "Pendentes",
+            "declined": "Reprovadas",
+            "supported": "Patrocinadas"
+        },
+        "sort": {
+            "recents": "Recents",
+            "aToZ": "A-Z"
+        },
+        "actions": {
+            "moderate": "Moderate",
+            "connect": "Connect"
+        }
+    },
+    "page_idea_page": {
+        "assess_idea": "Avaliar Ideia",
+        "assessment": {
+            "disruption": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "difficulty": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "impact": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "return": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "time": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            }
+        },
+        "assessment_types": {
+            "disruption": "Disrupção",
+            "difficulty": "Dificuldade",
+            "impact": "Impacto",
+            "return": "Retorno",
+            "time": "Tempo"
+        },
+        "tabs": {
+            "idea-description": {
+                "__label": "Descrição"
+            },
+            "idea-attachments": {
+                "__label": "Anexos"
+            },
+            "idea-trends": {
+                "__label": "Trends"
+            },
+            "idea-vpc": {
+                "__label": "Proposta de Valor"
+            },
+            "idea-kpis": {
+                "__label": "KPI's"
+            },
+            "idea-moderator": {
+                "__label": "Avaliar"
+            },
+            "idea-sponsor": {
+                "__label": "Sponsor"
+            }
+        },
+        "value_proposition_canvas": {
+            "customer_jobs": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "gains": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "gains_creators": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "pains": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "pains_relievers": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            },
+            "products_and_services": {
+                "tip": "Quantas respostas você precisará para representar com precisão o seu problema? Quantos serão razoáveis para coletar no período de sua campanha?"
+            }
+        }
+    },
+    "header": {
+        "menu": {
+            "user": {
+                "see-profile": "Ver Perfil",
+                "edit-profile": "Editar Perfil"
+            }
+        }
+    },
+    "emptyStates": {
+        "agent": {
+            "title": "Nenhum agente",
+            "text": "A lista de agentes está vazia."
+        },
+        "approvedIdea": {
+            "title": "Nenhuma ideia aprovada",
+            "text": "Nenhuma ideia aprovada"
+        },
+        "assessment": {
+            "title": "Nenhuma avaliação",
+            "text": "A lista de avaliações está vazia." 
+        },
+        "attachment": {
+            "title": "Nenhum anexo",
+            "text": "Não foi feito upload de nenhum arquivo ou documento. :("
+        },
+        "coauthor": {
+            "title": "Nenhum coautor",
+            "text": "A lista de coautores está vazia."
+        },
+        "connection": {
+            "title": "Nenhuma conexão",
+            "text": "A lista de conexões está vazia."
+        },
+        "draftPlatform": {
+            "title": "Nenhuma plataforma",
+            "text": "Não foi encontrado nenhum rascunho."
+        },
+        "draftIdea": {
+            "title": "Nenhuma ideia",
+            "text": "Não foi encontrado nenhum rascunho."
+        },
+        "group": {
+            "title": "Nenhum grupo",
+            "text": "A lista de grupos está vazia."
+        },
+        "idea": {
+            "title": "Nenhuma ideia",
+            "text": "A lista de ideias está vazia."
+        },
+        "image": {
+            "title": "Selecione uma imagem.",
+            "text": "Clique para selecionar uma imagem na galeria ou fazer um upload."
+        },
+        "investment": {
+            "title": "Nenhum investimento",
+            "text": "A lista de investimentos está vazia."
+        },
+        "medal": {
+            "title": "Nenhuma medalha",
+            "text": "A lista de medalhas está vazia."
+        },
+        "moderator": {
+            "title": "Nenhum moderador",
+            "text": "A lista de moderadores está vazia."
+        },
+        "notification": {
+            "title": "Nenhuma notificação",
+            "text": "A lista de notificações está vazia."
+        },
+        "participants": {
+            "title": "Nenhum participante",
+            "text": "A lista de participantes está vazia."
+        },
+        "platform": {
+            "title": "Nenhuma plataforma",
+            "text": "A lista de plataformas está vazia."
+        },
+        "registeredIdea": {
+            "title": "Nenhuma ideia",
+            "text": "Nenhuma ideia cadastrada."
+        },
+        "rewardedIdea": {
+            "title": "Nenhuma ideia premiada",
+            "text": "A lista de ideias premiadas está vazia."
+        },
+        "sponsor": {
+            "title": "Nenhum sponsor",
+            "text": "A lista de sponsors está vazia."
+        },
+        "how_to_agents": "Saiba como criar um Agente",
+        "how_to_attachment": "Saiba como anexar arquivos",
+        "how_to_assessment": "Saiba como avaliar uma ideia",
+        "how_to_connection": "Saiba como conectar ideias",
+        "how_to_group": "Saiba como criar um grupo",
+        "how_to_idea": "Saiba como criar um ideia",
+        "how_to_platform": "Saiba como criar uma plataforma",
+        "how_to_investment": "Saiba como Investir",
+        "how_to_medal": "Saiba como criar uma medalha",
+        "how_to_moderator": "Saiba como criar um Moderador",
+        "how_to_notification": "Saiba o que são notificações",
+        "how_to_support": "Saiba como patrocinar uma ideia",
+        "how_to_image": "Saiba como escolher uma imagem"
+    },
+    "global":{
+        "about": "Sobre",
+        "action": "Ação",
+        "actions": "Ações",
+        "active": "Acivo",
+        "advance": "Avançar",
+        "agent": "Agente",
+        "agents": "Agentes",
+        "algorithm": "Algoritmo",
+        "approval": "Aprovação",
+        "approve": "Aprovar",
+        "approved-ideas": "Ideias Aprovadas",
+        "archived": "Arquivada",
+        "assesments": "Avaliações",
+        "assess": "Avaliar",
+        "assessment": "Avaliação",
+        "attachments": "Anexos",
+        "author": "Autor",
+        "authors": "Autores",
+        "back": "Voltar",
+        "bookmark": "Salvar Favorito",
+        "cancel": "Cancelar",
+        "clean": "Limpar",
+        "close": "Fechar",
+        "co-author": "Coautor",
+        "co-authors": "Coautores",
+        "color": "Cor",
+        "copy": "Copiar",
+        "comments": "Comentários",
+        "comments-comment": "Comentar",
+        "confirm": "Confirmar",
+        "connect": "Conectar",
+        "connections": "Conexões",
+        "create": "Criar",
+        "date": "Data",
+        "decline": "Reprovar",
+        "delete": "Deletar",
+        "denunciate": "Denunciar",
+        "description": "Descrição",
+        "downloadPDF": "Baixar PDF",
+        "edit": "Editar",
+        "end": "Encerrar",
+        "end-platform": "Encerrar",
+        "favorable-votes": "Votos Favoráveis",
+        "financial_support": "Apoio Financeiro",
+        "flag": "Denunciar",
+        "generatePDF": "Gerar PDF",
+        "goals": "Metas",
+        "group": "Grupo",
+        "groupColor": "Cor do Grupo",
+        "groups": "Grupos",
+        "groupTitle": "Título do Grupo",
+        "guests": "Convidados",
+        "idea": "Ideia",
+        "ideaTitle": "Título da Idéia",
+        "ideasLimit": "Limite de Ideias",
+        "ideas": "Ideias",
+        "ideasGathering": "Coleta de Ideias",
+        "idea-approve": "Aprovar",
+        "idea-neutral": "Neutro",
+        "idea-decline": "Reprovar",
+        "idea-approved": "Aprovada",
+        "idea-declined": "Reprovada",
+        "ideia-assessment-approved": "Aprovada",
+        "ideia-assessment-declined": "Reprovada",
+        "ideia-assessment-pending": "Pendente",
+        "in": "em",
+        "institutional_support": "Apoio Institucional",
+        "invest": "Investir",
+        "invested": "Já investido",
+        "investment": "Investimento",
+        "investments": "Investimentos",
+        "investments-lastInvestments": "Últimos Investimentos",
+        "investments-portfolioSummary": "Resumo da carteira",
+        "investments-portfolioPotentialROI": "ROI potencial da carteira",
+        "investments-portfolioPotentialLoss": "Prejuízo potencial da carteira",
+        "investments-simulatedROI": "ROI Simulado",
+        "investments-totalCreditsAvailable": "Total de créditos disponíveis",
+        "investments-totalCreditsInvested": "Total de créditos investidos (posição atual)",
+        "investors": "Investidores",
+        "invite": "Convidar",
+        "invite-acceptedAt": "Aceito em",
+        "invitees": "Convidados",
+        "justification": "Justificativa",
+        "lastLoginAt": "Último Login",
+        "limit": "Limite",
+        "loadMore": "Carregar Mais",
+        "logout": "Logout",
+        "medal": "Medalha",
+        "medal-difficulty-easy": "Fácil",
+        "medal-difficulty-medium": "Médio",
+        "medal-difficulty-hard": "Difícil",
+        "medalColor": "Cor da Medalha",
+        "medals": "Medalhas",
+        "medalScore": "Pontuação da Medalha",
+        "medalTitle": "Título da Medalha",
+        "members": "Membros",
+        "moderate": "Moderar",
+        "moderators": "Moderadores",
+        "name": "Nome",
+        "never": "Nunca",
+        "next": "Próximo",
+        "new": "Novo",
+        "nickname": "Apelido",
+        "notifications": "Notificações",
+        "participants": "Participantes",
+        "participate": "Participar",
+        "participating": "Participando",
+        "pending": "Pendente",
+        "pending-request": "Pedido Pendente",
+        "permission": "Permissão",
+        "picture": "Imagem",
+        "platform": "Plataforma",
+        "platform-approved-agents": "Agentes Aprovados",
+        "platform-ideas-assessed": "Ideias Avaliadas",
+        "platform-pending-agents": "Agentes Pendentes",
+        "platforms": "Plataformas",
+        "platformTitle": "Título da Plataforma",
+        "previous": "Anterior",
+        "print": "Imprimir",
+        "publish": "Publicar",
+        "publishDate": "Data de Publicação",
+        "reevaluate": "Reavaliar",
+        "remove": "Excluir",
+        "reply": "Responder",
+        "reward": "Premiar",
+        "role": "Papel",
+        "save": "Salvar",
+        "search": "Buscar",
+        "see": "Ver",
+        "settings": "Configurações",
+        "share": "Compartilhar",
+        "similarity": "Similaridade",
+        "simulate": "Simular",
+        "simulator": "Simulador",
+        "source": "Origem",
+        "sponsor": "Sponsor",
+        "sponsored": "Patrocinada",
+        "sponsors": "Sponsors",
+        "status": "Status",
+        "summary": "Resumo",
+        "support": "Apoiar",
+        "supports": "Patrocínios",
+        "supported": "Apoiada",
+        "swot": "SWOT",
+        "time-start": "Início",
+        "time-end": "Fim",
+        "update": "Atualizar",
+        "useThis": "Usar Esta",
+        "valueProposition": "Proposta de Valor",
+        "view": "Visualizar",
+        "vote": "Votar",
+        "votes": "Votos",
+        "yourComputer": "Seu Computador"
+    },
+    "idea": {
+        "status": {
+            "rascunho": "Rascunho",
+            "ativa": "Ativa",
+            "pendente": "Pendente",
+            "aprovada": "Aprovada",
+            "reprovada": "Reprovada",
+            "encerrada": "Encerrada",
+            "arquivada": "Arquivada"
+        }
+    },
+    "platform": {
+        "permissao": {
+            "publica": "Publica",
+            "livre": "Livre",
+            "restrita": "Restrita",
+            "secreta": "Secreta"
+        },
+        "status": {
+            "rascunho": "Rascunho",
+            "programada": "Programada",
+            "sugerida": "Sugerida",
+            "ativa": "Ativa",
+            "encerrada": "Encerrada",
+            "arquivada": "Arquivada"
+        }
+    },
+    "roles": {
+        "administrador": "Administrador",
+        "agente": "Agente",
+        "moderador": "Moderador",
+        "sponsor": "Sponsor"
+    },
+    "sidebar": {
+        "home": "Home",
+        "platforms": "Plataformas",
+        "ideas": "Ideias",
+        "innovations": "Inovações",
+        "groups": "Grupos",
+        "drafts": "Rascunhos",
+        "reports": "Reports",
+        "bookmarks": "Favoritos",
+        "history": "Histórico",
+        "help": {
+            "__label": "Ajuda",
+            "page1": "Página 1",
+            "page2": "Página 2",
+            "page3": "Página 3"
+        }
+    },
+    "trends_slider": {
+        "analyze": "Analisar",
+        "analyzing": "Analisando"
+    }
+}

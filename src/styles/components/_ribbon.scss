@@ -1,0 +1,128 @@
+/*
+** RIBBON
+*/
+
+/* common */
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.ribbon::before,
+.ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+}
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* top right*/
+.ribbon-top-right {
+    top: -10px;
+    right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.ribbon-top-right::before {
+    top: 0;
+    left: 0;
+}
+.ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+}
+.ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+}
+
+.award {
+    position: absolute;
+    z-index: 1;
+    // height: 125px;
+    transform: translateX(6px) translateY(6px)
+}
+.award .ribbon1 {
+    position: relative;
+    padding: 6px 12px;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 0 5px 0 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    animation: grow 1s both cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    // border: 1px solid white;
+    color: white;
+
+}
+.award .ribbon1 span {
+    display: block;
+}
+.award .ribbon1 span strong {
+    color: white;
+    text-transform: uppercase;
+}
+.award .ribbon1.top {
+    z-index: 1;
+    transform: skewY(20deg);
+    border-radius: 0 5px 0 5px;
+    min-width: 85px;
+}
+.award .ribbon1.top span {
+    transform: skewY(-20deg) rotateZ(20deg);
+}
+.award .ribbon1.bottom {
+    transform: skewY(-20deg) translateY(15px);
+    background: linear-gradient(45deg, #e9e9e9, #cecece);
+    min-width: 85px;
+}
+.award .ribbon1.bottom span {
+    transform: skewY(20deg) rotateZ(-20deg);
+}
+
+#ideia-page {
+    .award {
+        transform: translateX(-50%) translateY(57%);
+        left: 50%;
+
+        .ribbon1 {
+            background-color: rgba(255, 255, 255, 0.255);
+        }
+    }
+}
+
+.tile-ideia {
+    .award {
+        transform: translateX(-50%) translateY(10%);
+        left: 50%;
+    }
+}
+
+.cardbox-investimentos {
+    .ribbon1 {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+}

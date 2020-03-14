@@ -1,0 +1,37 @@
+#page-busca {
+    .content {
+        min-height: auto;
+    }
+}
+
+.busca-results {
+    a:not(:last-of-type) {
+        .busca-result {
+            border-bottom: 1px solid lightgray;
+        }
+    }
+}
+
+.busca-ver-todos-container {
+    // background-color: blue;
+    width: 100%;
+    text-align: center;
+    // display: block;
+    height: 100%;
+    padding: 0px 0px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: rgba(33,33,33,0.1);
+    }
+}
+.busca-ver-todos {
+    display: inline;
+    // text-decoration: underline;
+    padding: 5px 5px 0px 5px;
+    // background-color: red;
+    border-bottom: 1px solid gray;
+}

@@ -1,0 +1,61 @@
+<% typeof _text_meus_objetos == 'undefined' ? _text_meus_objetos = '' : void 0 %>
+<% typeof _with_dropdown_plataformas == 'undefined' ? _with_dropdown_plataformas = false : void 0 %>
+<% typeof _with_dropdown_portfolios == 'undefined' ? _with_dropdown_portfolios = false : void 0 %>
+<nav id="filterNavbar" class="navbar navbar-expand-lg navbar-light bg-custom second-navbar">
+    <button class="navbar-toggler navbar-toggler-fullwidth" type="button" data-toggle="collapse" data-target="#listFilters" aria-controls="listFilters" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        Filtros
+    </button>
+    <div class="collapse navbar-collapse" id="listFilters">
+        <ul class="navbar-nav list-filters">
+            <li class="nav-item bottom_border"
+                data-filter="highlights">
+                <a class="nav-link" href="#" style="width: 100px;">
+                    <p style="background: var(--waiting-color);">
+                        &nbsp;
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item bottom_border"
+                data-filter="a-z">
+                <a class="nav-link" href="#" style="width: 100px;">
+                    <p style="background: var(--waiting-color);">
+                        &nbsp;
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item bottom_border"
+                data-filter="recentes">
+                <a class="nav-link" href="#" style="width: 100px;">
+                    <p style="background: var(--waiting-color);">
+                        &nbsp;
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item bottom_border"
+                data-filter="finalizadas">
+                <a class="nav-link" href="#" style="width: 100px;">
+                    <p style="background: var(--waiting-color);">
+                        &nbsp;
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item bottom_border"
+                data-filter="minhas">
+                <a class="nav-link" href="#" style="width: 100px;">
+                    <p style="background: var(--waiting-color);">
+                        &nbsp;
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav dropdown-filters">
+            <li class="nav-item ">
+                <%- _with_dropdown_plataformas ? include('component_dropdown_filterable_plataformas', { plataformas: plataformas }) : void 0 %>
+            </li>
+            <li class="nav-item ">
+                <%- _with_dropdown_portfolios ? include('component_dropdown_filterable_portfolios', { portfolios: portfolios }) : void 0 %>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,66 @@
+/*
+** DUAL-LIST
+*/
+
+.dual-list {
+    span {
+        font-size: 16px;
+    }
+
+    .input-group {
+        i {
+            position: absolute;
+            right: 0;
+            font-size: 16px;
+            top: 9px;
+            opacity: 0.8;
+        }
+    }
+}
+
+.dual-list.list-left {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 0px;
+    border-right: 1px solid black;
+}
+
+.dual-list.list-right {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.dual-list .dual-list-group-item {
+    border-bottom: 1px solid #e5e5e5;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dual-list .dual-list-group-item:hover:not(.active) {
+    background-color: #a3a3a3;
+    cursor: pointer;
+}
+
+[scrollable] .dual-list-group-item {
+    padding: 1.5em;
+}
+
+.dual-list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dual-list-group-item {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 1rem;
+    line-height: 1;
+}
+.dual-list-group-item {
+    position: relative;
+    margin-bottom: 0;
+    background-color: inherit;
+    border: 0 solid rgba(0,0,0,.125);
+}

@@ -1,0 +1,57 @@
+<% function getTimeSpan(ticks) {
+  var d = new Date(ticks);
+  return {
+      hour: d.getUTCHours(), 
+      minute: d.getMinutes(), 
+      second: d.getSeconds(),
+      mili: d.getMilliseconds()
+  }
+}
+
+var start = new Date();
+%>
+<!DOCTYPE html>
+<html>
+  <head>
+      <%- include('template_head') %>
+    <title>SENNO<%#= (typeof title != "undefined" ? title + " | SENNO" : "") %></title>
+  </head>
+  <body>
+      <div id="connection" ></div>
+      <div id="header">
+        <%- include('template_header') %>
+      </div>
+
+      <section class="main">
+
+        <div class="main__sidebar retract">
+            <%- include('template_sidebar') %>
+        </div>
+
+        <div class="main__content">
+          <%- include('template_content') %>
+          <%#- include('modal_nova_ideia') %>
+          <%#- include('modal_nova_plataforma') %>
+          <%#- include('modal_novo_portfolio') %>
+        </div>
+      </section>
+      <div id="template_modals"></div>
+      <div id="saving" class="d-none" style="position: absolute;">
+        <div class="lds-ripple"><div></div><div></div></div>
+        <!-- <div class="page-loader">
+          <div class="loader-logo"><img src="/images/sennoLogo-blue.png"/></div>
+          <div class="loader-bar">
+              <div class="loader-indicator"></div>
+          </div>
+      </div> -->
+      </div>
+      
+      <%- include('template_foot') %>
+  </body>
+</html>
+<% var end = new Date();
+
+var sp = getTimeSpan(end - start);
+console.log(`timeuse：${sp.hour} hour ${sp.minute} minute ${sp.second} second ${sp.mili} milisecond`)
+
+%>

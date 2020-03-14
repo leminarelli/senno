@@ -1,0 +1,35 @@
+
+/*
+** COVER INOVACAO
+*/
+
+.cover-content a.cover-inovacao-author {
+    top: var(--cover-content-padding);
+    left: calc(var(--cover-content-padding));
+    text-align: left;
+}
+.cover-content a.cover-inovacao-ideia {
+    top: var(--cover-content-padding);
+    right: calc(var(--cover-content-padding));
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.cover-content a.cover-inovacao-coautores {
+    bottom: var(--cover-content-padding);
+    left: calc(var(--cover-content-padding));
+}
+
+.cover-content a.cover-inovacao-flag {
+    bottom: var(--cover-content-padding);
+    right: calc(100px + var(--cover-content-padding));
+}
+.cover-content a.cover-inovacao-pin {
+    bottom: var(--cover-content-padding);
+    right: calc(50px + var(--cover-content-padding));
+}
+.cover-content a.cover-inovacao-share {
+    bottom: var(--cover-content-padding);
+    right: calc(var(--cover-content-padding));
+}

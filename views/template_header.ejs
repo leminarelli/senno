@@ -1,0 +1,97 @@
+<header class="header retract">
+    <input type="hidden" id="headerTitle"               value="<%= title %>">
+
+    <div class="header__logo">
+        <a class="navbar-brand" href="/">
+            <img src="<%= global.sennoSettings.logoPath %>" height="30" alt=""/>
+        </a>
+
+        <svg class="bt-retract-menu" viewBox="0 0 50 32"><path d="M49,4H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,4,49,4z"></path><path d="M49,16H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,16,49,16z"></path><path d="M49,28H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,28,49,28z"></path><path d="M8.1,22.8c-0.3,0-0.5-0.1-0.7-0.3L0.7,15l6.7-7.8c0.4-0.4,1-0.5,1.4-0.1c0.4,0.4,0.5,1,0.1,1.4L3.3,15l5.5,6.2   c0.4,0.4,0.3,1-0.1,1.4C8.6,22.7,8.4,22.8,8.1,22.8z"></path></svg>
+    </div>
+    <nav class="header__nav navbar navbar-expand-lg navbar-light d-flex align-items-center">
+        <!-- <a class="navbar-brand" href="/">
+            <img src="<%= global.sennoSettings.logoPath %>" height="30" alt=""/>
+        </a> -->
+        
+        <div class="header__nav__title">
+            <svg class="bt-expand-menu" tabindex="1" focusable="true" viewBox="0 0 32 32"><path d="M31,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h30c0.6,0,1,0.4,1,1S31.6,4,31,4z"></path><path d="M31,16H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S31.6,16,31,16z"></path><path d="M31,28H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S31.6,28,31,28z"></path></svg>
+            <h2 id="menu_header_title_container">
+                <div class="loading bg-selected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <%#= typeof title !== 'undefined' ?  title : 'Home' %>
+            </h2>
+            <h2><%#= typeof global.currentTenant[req.user.id] === 'undefined' ? '' : typeof global.currentTenant[req.user.id] === 'object' ? global.currentTenant[req.user.id].nome : global.currentTenant[req.user.id] %></h2>
+        </div>
+
+        <div class="form-inline" id="header_busca" >
+            <form class="form-inline loading" action="/buscar">
+                <input class="form-control bmd-form-group bg-white p-2" type="search" placeholder="" aria-label="Search" name="query" />
+                <!-- <button class="btn btn-transparent fa-1_5x d-flex align-items-center justify-content-center" type="submit">
+                    <div style="width: 14px">
+                        <%- h.svg('busca') %>
+                    </div>
+                </button> -->
+            </form>
+        </div>
+
+        <ul class="navbar-nav create-buttons-list">
+            <% var popover_novo = `
+                <div class='popover popover-new' role='tooltip'>
+                    <div class='arrow'></div>
+                    <div class='senno-popover-body p-0 senno-popover-body-novo'>
+                        <div class="list-group">
+                            <ul>
+                                <li class="nav-item" data-toggle="modal" data-target="#modal_nova_ideia">
+                                    <a class="btn" tabindex="1">${ h.icon('ideia') } Ideia</a>
+                                </li>
+                                <li class="nav-item" data-toggle="modal" data-target="#modal_nova_plataforma">
+                                    <a class="btn" tabindex="1">${ h.icon('plataforma') } Plataforma</a>
+                                </li>
+                                <li class="nav-item" data-toggle="modal" data-target="#modal_editar_grupo">
+                                    <a class="btn" tabindex="1">${ h.icon('grupo') }</i> Grupo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>;
+            `%>
+
+            <li class="nav-item" id="menu_header_novo_container">
+                <a href="#" class="btn btn-new d-flex align-items-center" id="menu_header_novo" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-template="<%= popover_novo %>" data-content=" " >
+                    <div class="d-flex icon" style="width: 13px; margin-right: 10px;"><%- h.svg('novo') %></div><span class="loading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto text-center d-flex align-items-center">
+                <li class="nav-item" id="menu_header_investimentos_container">
+                    <a href="#" class="nav-link" id="menu_header_investimentos">
+                        <div class="fa-1_5x d-flex align-items-center">
+                            <%- h.svg('investimento') %>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" id="menu_header_notificacoes_container">
+                    <a href="#" class="nav-link">
+                        <div class="fa-1_5x d-flex align-items-center">
+                            <span class="badge badge-pill badge-danger badge-up" style="right: -8px; visibility: hidden">&nbsp;</span>
+                            <%- h.svg('notificacao') %>
+                        </div>
+                    </a>
+                </li>
+    
+                <li class="nav-item" id="menu_header_user_container">
+                    <a href="#" class="nav-link d-inline-block ph-10px pv-0px">
+                        <div class="circle-avatar circle-avatar-sm border-0" style='background-color: black; width: 45px; height: 45px;'>
+                            <div id="menu_header_user_initials" style="font-size: 1.5em; color: white;">AQ</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

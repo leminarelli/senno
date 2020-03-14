@@ -1,0 +1,84 @@
+/*
+** LINK PREVIEW
+*/
+
+.link-preview {
+    max-width: 100%;
+    height: 120px;
+    background-color: white;
+    border-radius: 0.5em;
+    margin: auto;
+}
+
+.link-preview-card {
+    height: 90px;
+    border-radius: .5em;
+    background-color: #fafafa;
+    display: flex;
+    flex-flow: row;
+}
+
+.link-preview-caption {
+    padding: 5px;
+    font-size: .85em;
+}
+
+.link-preview-thumbnail {
+    min-width: 90px;
+    height: 90px;
+    border-radius: .5em 0px 0px .5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.link-preview-title {
+    display: block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+.link-preview-content {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.link-preview-description {
+    font-size: 12px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.6);
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.link-preview-title span {
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+button.link-preview-remove {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    background: transparent;
+    border: 0;
+    top: 0px;
+    position: absolute;
+    right: 6px;
+    cursor: pointer;
+}

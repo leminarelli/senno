@@ -1,0 +1,361 @@
+
+/*
+** FILEINPUT
+*/
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: black;
+    cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    pointer-events: none;
+}
+
+
+
+
+
+/* Range
+========================================================================== */
+.range-field {
+    position: relative;
+}
+
+input[type=range],
+input[type=range] + .thumb {
+    cursor: pointer;
+}
+
+input[type=range] {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range] + .thumb {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border: none;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    margin-left: 7px;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+input:disabled[type=range] + .thumb {
+    background-color: #bdbdbd;
+}
+
+input[type=range] + .thumb .value {
+    display: block;
+    width: 30px;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+input[type=range] + .thumb.active {
+    border-radius: 50% 50% 50% 0;
+}
+
+input[type=range] + .thumb.active .value {
+    color: #fff;
+    margin-left: -1px;
+    margin-top: 8px;
+    font-size: 10px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 3px;
+    background: #c2c0c2;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: var(--main-color);
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s, -webkit-box-shadow .3s;
+    -webkit-appearance: none;
+    background-color: var(--main-color);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    margin: -5px 0 0 0;
+    z-index: 10;
+}
+
+.keyboard-focused input[type=range]:focus:not(.active)::-webkit-slider-thumb {
+    -webkit-box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+            box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+}
+
+input[type=range] {
+/* fix for FF unable to apply focus style bug  */
+    border: 1px solid white;
+/*required for proper track sizing in FF*/
+}
+
+input[type=range]::-moz-range-track {
+    height: 3px;
+    background: #c2c0c2;
+    border: none;
+}
+
+input[type=range]::-moz-focus-inner {
+    border: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: var(--main-color);
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s, -webkit-box-shadow .3s;
+    margin-top: -5px;
+}
+
+input[type=range]:-moz-focusring {
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+}
+
+.keyboard-focused input[type=range]:focus:not(.active)::-moz-range-thumb {
+    box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+}
+
+input[type=range]::-ms-track {
+    height: 3px;
+    background: red;
+    border-color: red;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: red;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #777;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: var(--main-color);
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+input:disabled[type=range]::-webkit-slider-thumb {
+    background: #bdbdbd;
+    background-color: #bdbdbd;
+}
+input:disabled[type=range]::-moz-range-thumb {
+    background: #bdbdbd;
+    background-color: #bdbdbd;
+}
+input:disabled[type=range]::-ms-thumb {
+    background: #bdbdbd;
+    background-color: #bdbdbd;
+}
+
+.keyboard-focused input[type=range]:focus:not(.active)::-ms-thumb {
+    box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+}
+
+
+
+/*
+** Material INPUTS Color
+*/
+
+.checkbox-inline,.checkbox label,.is-focused .checkbox-inline,.is-focused .checkbox label,.is-focused .radio-inline,.is-focused .radio label,.is-focused .switch label,.radio-inline,.radio label,.switch label {
+    color: rgba(0,0,0, 1)
+}
+
+.checkbox-inline:active,.checkbox-inline:focus,.checkbox-inline:hover,.checkbox label:active,.checkbox label:focus,.checkbox label:hover,.is-focused .checkbox-inline:active,.is-focused .checkbox-inline:focus,.is-focused .checkbox-inline:hover,.is-focused .checkbox label:active,.is-focused .checkbox label:focus,.is-focused .checkbox label:hover,.is-focused .radio-inline:active,.is-focused .radio-inline:focus,.is-focused .radio-inline:hover,.is-focused .radio label:active,.is-focused .radio label:focus,.is-focused .radio label:hover,.is-focused .switch label:active,.is-focused .switch label:focus,.is-focused .switch label:hover,.radio-inline:active,.radio-inline:focus,.radio-inline:hover,.radio label:active,.radio label:focus,.radio label:hover,.switch label:active,.switch label:focus,.switch label:hover {
+    color: rgba(0,0,0,.54)
+}
+
+.checkbox-inline label:has(input[type=checkbox][disabled]),.checkbox-inline label:has(input[type=checkbox][disabled]):focus,.checkbox-inline label:has(input[type=checkbox][disabled]):hover,.checkbox-inline label:has(input[type=radio][disabled]),.checkbox-inline label:has(input[type=radio][disabled]):focus,.checkbox-inline label:has(input[type=radio][disabled]):hover,.checkbox label label:has(input[type=checkbox][disabled]),.checkbox label label:has(input[type=checkbox][disabled]):focus,.checkbox label label:has(input[type=checkbox][disabled]):hover,.checkbox label label:has(input[type=radio][disabled]),.checkbox label label:has(input[type=radio][disabled]):focus,.checkbox label label:has(input[type=radio][disabled]):hover,.is-focused .checkbox-inline label:has(input[type=checkbox][disabled]),.is-focused .checkbox-inline label:has(input[type=checkbox][disabled]):focus,.is-focused .checkbox-inline label:has(input[type=checkbox][disabled]):hover,.is-focused .checkbox-inline label:has(input[type=radio][disabled]),.is-focused .checkbox-inline label:has(input[type=radio][disabled]):focus,.is-focused .checkbox-inline label:has(input[type=radio][disabled]):hover,.is-focused .checkbox label label:has(input[type=checkbox][disabled]),.is-focused .checkbox label label:has(input[type=checkbox][disabled]):focus,.is-focused .checkbox label label:has(input[type=checkbox][disabled]):hover,.is-focused .checkbox label label:has(input[type=radio][disabled]),.is-focused .checkbox label label:has(input[type=radio][disabled]):focus,.is-focused .checkbox label label:has(input[type=radio][disabled]):hover,.is-focused .radio-inline label:has(input[type=checkbox][disabled]),.is-focused .radio-inline label:has(input[type=checkbox][disabled]):focus,.is-focused .radio-inline label:has(input[type=checkbox][disabled]):hover,.is-focused .radio-inline label:has(input[type=radio][disabled]),.is-focused .radio-inline label:has(input[type=radio][disabled]):focus,.is-focused .radio-inline label:has(input[type=radio][disabled]):hover,.is-focused .radio label label:has(input[type=checkbox][disabled]),.is-focused .radio label label:has(input[type=checkbox][disabled]):focus,.is-focused .radio label label:has(input[type=checkbox][disabled]):hover,.is-focused .radio label label:has(input[type=radio][disabled]),.is-focused .radio label label:has(input[type=radio][disabled]):focus,.is-focused .radio label label:has(input[type=radio][disabled]):hover,.is-focused .switch label label:has(input[type=checkbox][disabled]),.is-focused .switch label label:has(input[type=checkbox][disabled]):focus,.is-focused .switch label label:has(input[type=checkbox][disabled]):hover,.is-focused .switch label label:has(input[type=radio][disabled]),.is-focused .switch label label:has(input[type=radio][disabled]):focus,.is-focused .switch label label:has(input[type=radio][disabled]):hover,.radio-inline label:has(input[type=checkbox][disabled]),.radio-inline label:has(input[type=checkbox][disabled]):focus,.radio-inline label:has(input[type=checkbox][disabled]):hover,.radio-inline label:has(input[type=radio][disabled]),.radio-inline label:has(input[type=radio][disabled]):focus,.radio-inline label:has(input[type=radio][disabled]):hover,.radio label label:has(input[type=checkbox][disabled]),.radio label label:has(input[type=checkbox][disabled]):focus,.radio label label:has(input[type=checkbox][disabled]):hover,.radio label label:has(input[type=radio][disabled]),.radio label label:has(input[type=radio][disabled]):focus,.radio label label:has(input[type=radio][disabled]):hover,.switch label label:has(input[type=checkbox][disabled]),.switch label label:has(input[type=checkbox][disabled]):focus,.switch label label:has(input[type=checkbox][disabled]):hover,.switch label label:has(input[type=radio][disabled]),.switch label label:has(input[type=radio][disabled]):focus,.switch label label:has(input[type=radio][disabled]):hover,fieldset[disabled] .checkbox-inline,fieldset[disabled] .checkbox-inline:focus,fieldset[disabled] .checkbox-inline:hover,fieldset[disabled] .checkbox label,fieldset[disabled] .checkbox label:focus,fieldset[disabled] .checkbox label:hover,fieldset[disabled] .is-focused .checkbox-inline,fieldset[disabled] .is-focused .checkbox-inline:focus,fieldset[disabled] .is-focused .checkbox-inline:hover,fieldset[disabled] .is-focused .checkbox label,fieldset[disabled] .is-focused .checkbox label:focus,fieldset[disabled] .is-focused .checkbox label:hover,fieldset[disabled] .is-focused .radio-inline,fieldset[disabled] .is-focused .radio-inline:focus,fieldset[disabled] .is-focused .radio-inline:hover,fieldset[disabled] .is-focused .radio label,fieldset[disabled] .is-focused .radio label:focus,fieldset[disabled] .is-focused .radio label:hover,fieldset[disabled] .is-focused .switch label,fieldset[disabled] .is-focused .switch label:focus,fieldset[disabled] .is-focused .switch label:hover,fieldset[disabled] .radio-inline,fieldset[disabled] .radio-inline:focus,fieldset[disabled] .radio-inline:hover,fieldset[disabled] .radio label,fieldset[disabled] .radio label:focus,fieldset[disabled] .radio label:hover,fieldset[disabled] .switch label,fieldset[disabled] .switch label:focus,fieldset[disabled] .switch label:hover {
+    color: rgba(0,0,0, 1)
+}
+
+[class*=" bmd-label"],[class^=bmd-label] {
+    color: rgba(0,0,0, 1)
+}
+
+.custom-file-control,.form-control,.is-focused .custom-file-control,.is-focused .form-control{background-image:linear-gradient(0deg,var(--primary) 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0)}
+/*
+** MATERIALIZE https://materializecss.com/css/ghpages-materialize.css
+*/
+input[type=text].timepicker,
+input[type=text].datepicker {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*
+** CHECKBOX
+*/
+.checkbox label input[type=checkbox]:checked+.checkbox-decorator .check:before, label.checkbox-inline input[type=checkbox]:checked+.checkbox-decorator .check:before {
+    color: var(--main-color);
+}
+.checkbox label input[type=checkbox]:checked+.checkbox-decorator .check, label.checkbox-inline input[type=checkbox]:checked+.checkbox-decorator .check {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.checkbox label input[type=checkbox]:checked:disabled+.checkbox-decorator .check:before,
+label.checkbox-inline input[type=checkbox]:checked:disabled+.checkbox-decorator .check:before {
+    color: #b5b7b6;
+}
+
+/*
+** NUMBER
+*/
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+/*
+** PLACEHOLDER
+*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    
+}
+
+/*
+** SWITCH
+*/
+.switch label input:checked+.bmd-switch-track:after {
+    background-color: var(--main-color);
+}
+
+.switch label input:disabled + .bmd-switch-track::after {
+    background: #bdbdbd;
+}
+
+/*
+** RADIO
+*/
+.radio label input[type=radio]:checked~.bmd-radio:before, label.radio-inline input[type=radio]:checked~.bmd-radio:before {
+    background-color: var(--main-color);
+}
+.radio label input[type=radio]:checked~.bmd-radio:after, label.radio-inline input[type=radio]:checked~.bmd-radio:after {
+    border-color: var(--main-color);
+}
+
+.radio label input[type="radio"]:disabled + .bmd-radio::before, .radio label input[type="radio"][disabled] + .bmd-radio::before, fieldset[disabled] .radio label input[type="radio"] + .bmd-radio::before, fieldset[disabled] label.radio-inline input[type="radio"] + .bmd-radio::before, label.radio-inline input[type="radio"]:disabled + .bmd-radio::before, label.radio-inline input[type="radio"][disabled] + .bmd-radio::before {
+    background-color: rgba(0,0,0,.26);
+}
+.radio label input[type="radio"]:disabled + .bmd-radio::after, .radio label input[type="radio"][disabled] + .bmd-radio::after, fieldset[disabled] .radio label input[type="radio"] + .bmd-radio::after, fieldset[disabled] label.radio-inline input[type="radio"] + .bmd-radio::after, label.radio-inline input[type="radio"]:disabled + .bmd-radio::after, label.radio-inline input[type="radio"][disabled] + .bmd-radio::after {
+    border-color: rgba(0,0,0,.26);
+}
+
+.bmd-label-floating, .bmd-label-float {
+    font-size: 14px !important;
+    font-weight: 400;
+}

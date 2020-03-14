@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <title><%= title %></title>
+  </head>
+  <body>
+      <% console.log(locals) %>
+      <%- h.tag("a", {"href": "/asd", "class": ["c1", "c2", "c3"], "id": "link1"}, [
+          h.tag("i", {"class": "fa fa-fire"}, [
+            h.tag("div", {"id":"123"}, [
+              h.text("teste2")
+              ])
+          ]),
+          h.text("teste")
+        ]) %>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+/*
+** LIST GROUP
+*/
+
+.list-group-item :first-child {
+    margin-right: 0px !important;
+}
+
+.list-group-item-action.menu-user-item:focus, .list-group-item-action.menu-user-item:hover,
+.list-group-item-action.menu-notification-item:focus, .list-group-item-action.menu-notification-item:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #707070;
+}
+
+.list-group-item-action.menu-user-item :first-child {
+    margin-right: 2rem !important;
+}
